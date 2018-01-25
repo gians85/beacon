@@ -9,27 +9,17 @@
 #include "BlueNRG1_mft.h"
 #include "bluenrg_x_device.h"
 
-#define aaa
+#include "serial_mylib.h"
 
-#ifdef aaa
-volatile uint32_t a=0;
+
+uint32_t carry=0, b=0, c=0;
+
 void MFT1B_IRQHandler(void){
-    /*if ( MFT_StatusIT(MFT1,MFT_IT_TND) != RESET ){
-    	// Clear MFT2 pending interrupt A
-        //MFT_ClearIT(MFT1, MFT_IT_TND);
-    	SET_BIT(MFT1->TNICLR, MFT_IT_TND);
-
-    	// Set the counter at 1 us
-    	//MFT_SetCounter2(MFT1, 1);
-    	//MFT1->TNCNT2 = 0x1;
-
-        //update value
-        a++;
-    }*/
-	// Clear pending interrupt
-
-	MFT_ClearIT(MFT1, MFT_IT_TND);
-	a++;
+    if ( MFT_StatusIT(MFT1,MFT_IT_TND) != RESET ){
+    	carry = carry + 0x10000;
+        // Clear MFT2 pending interrupt A
+        MFT_ClearIT(MFT1, MFT_IT_TND);
+	}
 }
 
 
@@ -37,8 +27,9 @@ void us_ticker_init(void){
 	NVIC_InitType NVIC_InitStructure;
 	MFT_InitType timer_init;
 
-	SysCtrl_PeripheralClockCmd(CLOCK_PERIPH_MTFX1 | CLOCK_PERIPH_MTFX2, ENABLE);
+	carry = 0;
 
+	SysCtrl_PeripheralClockCmd(CLOCK_PERIPH_MTFX1 | CLOCK_PERIPH_MTFX2, ENABLE);
 	MFT_StructInit(&timer_init);
 
 	timer_init.MFT_Mode = MFT_MODE_3;
@@ -47,8 +38,11 @@ void us_ticker_init(void){
 	/* MFT1 configuration */
 	timer_init.MFT_Clock1 = MFT_NO_CLK;
 	timer_init.MFT_Clock2 = MFT_PRESCALED_CLK;
-	timer_init.MFT_CRB = 1;
+	timer_init.MFT_CRB = 0xFFFF;
 	MFT_Init(MFT1, &timer_init);
+
+	/* Set counter for timer2 */
+	MFT_SetCounter2(MFT1, 0xFFFF);
 
 	/* Enable MFT1B Interrupt */
 	NVIC_InitStructure.NVIC_IRQChannel = MFT1B_IRQn;
@@ -58,73 +52,35 @@ void us_ticker_init(void){
 
 	/* Enable the MFT1 interrupt */
 	MFT_EnableIT(MFT1, MFT_IT_TND, ENABLE);
+}
 
+
+uint32_t us_ticker_read(){
+	b =  MFT_GetCounter2(MFT1);
+	c = (0x0000FFFF-b)+carry;
+	return (c);
+}
+
+void us_ticker_set_interrupt(timestamp_t timestamp){
 	/* Enable the MFT1 */
 	MFT_Cmd(MFT1, ENABLE);
 }
 
-
-uint32_t us_ticker_read(){
-    return a;
-}
-
-void us_ticker_set_interrupt(timestamp_t timestamp){
-	//UART_SendData((uint8_t)(timestamp+48));
-	//MFT_Cmd(MFT1, ENABLE);
-	//MFT_SetCounter2(MFT1, 1);
-	//MFT_EnableIT(MFT1, MFT_IT_TND, ENABLE);
-	SET_BIT(MFT1->TNICTRL, (MFT_IT_TND << 4));
-}
-
 /* NOTE: must be called with interrupts disabled! */
 void us_ticker_disable_interrupt(void){
-	//__disable_irq();
-	/** Disable the MFT interrupt */
-	//MFT_EnableIT(MFT1, MFT_IT_TND, DISABLE);
-	CLEAR_BIT(MFT1->TNICTRL, (MFT_IT_TND << 4));
+	/* Disable the MFT1 */
+	MFT_Cmd(MFT1, DISABLE);
 }
 
 /* NOTE: must be called with interrupts disabled! */
 void us_ticker_clear_interrupt(void){
-	//MFT_ClearIT(MFT1, MFT_IT_TND);
-	SET_BIT(MFT1->TNICLR, MFT_IT_TND);
 }
 
 /* NOTE: must be called with interrupts disabled! */
 void us_ticker_fire_interrupt(void){
 }
-#endif //aaaa
 
 
-#ifdef ddd
-uint32_t lSystickCounter = 0;
-
-void SysTick_Handler(void){
-	lSystickCounter++;
-}
-
-void us_ticker_init(void){
-	SysTick_Config(160-1);  //10us
-}
-
-uint32_t us_ticker_read(){
-    return lSystickCounter;
-}
-
-void us_ticker_set_interrupt(timestamp_t timestamp){
-    NVIC_EnableIRQ(SysTick_IRQn);
-}
-
-void us_ticker_disable_interrupt(void){
-    NVIC_DisableIRQ(SysTick_IRQn);
-}
-
-void us_ticker_clear_interrupt(void){
-}
-
-void us_ticker_fire_interrupt(void){
-}
-#endif
 
 #ifdef fff
 uint32_t a;

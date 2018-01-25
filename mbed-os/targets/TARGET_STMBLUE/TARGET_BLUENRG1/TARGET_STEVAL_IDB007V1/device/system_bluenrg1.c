@@ -590,9 +590,9 @@ void SystemInit(void)
 	/* Device Configuration */
 	DeviceConfiguration(TRUE, TRUE);
 	/* Disable all the peripherals clock except NVM, SYSCTR, PKA and RNG */
-	CKGEN_SOC->CLOCK_EN = 0xE0066;
+	//CKGEN_SOC->CLOCK_EN = 0xE0066;
 	/* Disable all the peripherals clock except NVM, SYSCTR*/
-	//CKGEN_SOC->CLOCK_EN = 0x00006;
+	CKGEN_SOC->CLOCK_EN = 0x00006;
 	__enable_irq();
 	//__disable_irq();
 }

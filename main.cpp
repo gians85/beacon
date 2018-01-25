@@ -1,6 +1,7 @@
 #include "mbed.h"
+#include "serial_mylib.h"
 
-void mbed_die(void){};
+//void mbed_die(void){};
 void mydelay(void);
 
 DigitalOut led1(LED1);
@@ -10,9 +11,9 @@ Serial pc(USBTX, USBRX);
 int main() {
 	led2 = 1;
 	pc.printf("Hello\n\r");
-	while(true) {
+	while(1){
 		led1 = !led1;
-		mydelay();
+		wait_ms(50);
 	}
 }
 

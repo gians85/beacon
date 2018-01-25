@@ -4,7 +4,7 @@
         "size": {
             ".data": 4, 
             ".bss": 9, 
-            ".text": 36
+            ".text": 32
         }
     }, 
     {
@@ -20,7 +20,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 8524
+            ".text": 8632
         }
     }, 
     {
@@ -36,7 +36,7 @@
         "size": {
             ".data": 4, 
             ".bss": 100, 
-            ".text": 318
+            ".text": 296
         }
     }, 
     {
@@ -85,6 +85,22 @@
             ".data": 0, 
             ".bss": 0, 
             ".text": 4
+        }
+    }, 
+    {
+        "module": "mbed-os\\hal\\mbed_ticker_api.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 738
+        }
+    }, 
+    {
+        "module": "mbed-os\\hal\\mbed_us_ticker_api.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 64, 
+            ".text": 44
         }
     }, 
     {
@@ -140,7 +156,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 106
+            ".text": 202
         }
     }, 
     {
@@ -164,7 +180,7 @@
         "size": {
             ".data": 4, 
             ".bss": 272, 
-            ".text": 1101
+            ".text": 1117
         }
     }, 
     {
@@ -173,6 +189,14 @@
             ".data": 0, 
             ".bss": 0, 
             ".text": 28
+        }
+    }, 
+    {
+        "module": "mbed-os\\platform\\mbed_wait_api_no_rtos.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 44
         }
     }, 
     {
@@ -188,7 +212,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 501
+            ".text": 497
         }
     }, 
     {
@@ -212,7 +236,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 10
+            ".text": 226
         }
     }, 
     {
@@ -229,6 +253,14 @@
             ".data": 0, 
             ".bss": 0, 
             ".text": 436
+        }
+    }, 
+    {
+        "module": "mbed-os\\targets\\TARGET_STMBLUE\\TARGET_BLUENRG1\\device\\misc.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 148
         }
     }, 
     {
@@ -267,14 +299,14 @@
         "module": "mbed-os\\targets\\TARGET_STMBLUE\\us_ticker_api.o", 
         "size": {
             ".data": 0, 
-            ".bss": 4, 
-            ".text": 28
+            ".bss": 12, 
+            ".text": 232
         }
     }, 
     {
         "summary": {
-            "static_ram": 3040, 
-            "total_flash": 46578
+            "static_ram": 3112, 
+            "total_flash": 48162
         }
     }
 ]

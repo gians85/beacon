@@ -2,48 +2,45 @@
 
 <Workspace>
   <ConfigDictionary>
-    <CurrentConfigs>
-      <Project>mbed-os-gian-blue1-b05/mbed-os-gian-blue1-b05</Project>
-    </CurrentConfigs>
-  </ConfigDictionary>
+    
+  <CurrentConfigs><Project>mbed-os-gian-blue1-b05/mbed-os-gian-blue1-b05</Project></CurrentConfigs></ConfigDictionary>
   <Desktop>
     <Static>
       <Workspace>
         <ColumnWidths>
-          <Column0>362</Column0>
-          <Column1>27</Column1>
-          <Column2>27</Column2>
-          <Column3>27</Column3>
-        </ColumnWidths>
+          
+          
+          
+          
+        <Column0>316</Column0><Column1>52</Column1><Column2>27</Column2><Column3>0</Column3></ColumnWidths>
       </Workspace>
       <Debug-Log>
-        <ColumnWidth0>26</ColumnWidth0>
-        <ColumnWidth1>1632</ColumnWidth1>
-      </Debug-Log>
+        
+        
+      <ColumnWidth0>26</ColumnWidth0><ColumnWidth1>1632</ColumnWidth1></Debug-Log>
       <Build>
-        <ColumnWidth0>27</ColumnWidth0>
-        <ColumnWidth1>1223</ColumnWidth1>
-        <ColumnWidth2>326</ColumnWidth2>
-        <ColumnWidth3>81</ColumnWidth3>
-      </Build>
-    </Static>
+        
+        
+        
+        
+      <ColumnWidth0>27</ColumnWidth0><ColumnWidth1>1223</ColumnWidth1><ColumnWidth2>326</ColumnWidth2><ColumnWidth3>81</ColumnWidth3></Build>
+    <TerminalIO/></Static>
     <Windows>
-      <Wnd2>
+      
+      
+    <Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-29233-22789</Identity>
             <TabName>Workspace</TabName>
             <Factory>Workspace</Factory>
             <Session>
-              <NodeDict>
-                <ExpandedNode>mbed-os-gian-blue1-b05</ExpandedNode>
-              </NodeDict>
-            </Session>
+              
+            <NodeDict><ExpandedNode>mbed-os-gian-blue1-b05</ExpandedNode><ExpandedNode>mbed-os-gian-blue1-b05/Output</ExpandedNode><ExpandedNode>mbed-os-gian-blue1-b05/Output/name.out</ExpandedNode><ExpandedNode>mbed-os-gian-blue1-b05/Output/name.out/Output</ExpandedNode><ExpandedNode>mbed-os-gian-blue1-b05/mbed-os-gian-blue1-b05</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
-        <SelectedTab>0</SelectedTab>
-      </Wnd2>
-      <Wnd3>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
         <Tabs>
           <Tab>
             <Identity>TabID-7213-22792</Identity>
@@ -58,83 +55,21 @@
             <Session/>
           </Tab>
         </Tabs>
-        <SelectedTab>1</SelectedTab>
-      </Wnd3>
-    </Windows>
+        
+      <SelectedTab>1</SelectedTab></Wnd3></Windows>
     <Editor>
-      <Pane/>
-      <ActivePane>0</ActivePane>
-      <Sizes>
-        <Pane>
-          <X>1000000</X>
-          <Y>1000000</Y>
-        </Pane>
-      </Sizes>
-      <SplitMode>1</SplitMode>
-    </Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.cpp</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>241</SelStart2><SelEnd2>241</SelEnd2></Tab><ActiveTab>0</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
-      <Top>
-        <Row0>
-          <Sizes>
-            <Toolbar-01022900>
-              <key>iaridepm.enu1</key>
-            </Toolbar-01022900>
-          </Sizes>
-        </Row0>
-      </Top>
-      <Left>
-        <Row0>
-          <Sizes>
-            <Wnd2>
-              <Rect>
-                <Top>-2</Top>
-                <Left>-2</Left>
-                <Bottom>546</Bottom>
-                <Right>436</Right>
-                <x>-2</x>
-                <y>-2</y>
-                <xscreen>200</xscreen>
-                <yscreen>200</yscreen>
-                <sizeHorzCX>117578</sizeHorzCX>
-                <sizeHorzCY>234467</sizeHorzCY>
-                <sizeVertCX>257496</sizeVertCX>
-                <sizeVertCY>642438</sizeVertCY>
-              </Rect>
-            </Wnd2>
-          </Sizes>
-        </Row0>
-      </Left>
-      <Right>
-        <Row0>
-          <Sizes/>
-        </Row0>
-      </Right>
-      <Bottom>
-        <Row0>
-          <Sizes>
-            <Wnd3>
-              <Rect>
-                <Top>-2</Top>
-                <Left>-2</Left>
-                <Bottom>259</Bottom>
-                <Right>1703</Right>
-                <x>-2</x>
-                <y>-2</y>
-                <xscreen>1705</xscreen>
-                <yscreen>261</yscreen>
-                <sizeHorzCX>1002352</sizeHorzCX>
-                <sizeHorzCY>305979</sizeHorzCY>
-                <sizeVertCX>117578</sizeVertCX>
-                <sizeVertCY>234467</sizeVertCY>
-              </Rect>
-            </Wnd3>
-          </Sizes>
-        </Row0>
-      </Bottom>
-      <Float>
-        <Sizes/>
-      </Float>
-    </Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01210358><key>iaridepm.enu1</key></Toolbar-01210358></Sizes></Row0><Row1><Sizes><Toolbar-14E83950><key>debuggergui.enu1</key></Toolbar-14E83950></Sizes></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>522</Bottom><Right>436</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>117578</sizeHorzCX><sizeHorzCY>234467</sizeHorzCY><sizeVertCX>257496</sizeVertCX><sizeVertCY>614302</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>259</Bottom><Right>1703</Right><x>-2</x><y>-2</y><xscreen>1705</xscreen><yscreen>261</yscreen><sizeHorzCX>1002352</sizeHorzCX><sizeHorzCY>305979</sizeHorzCY><sizeVertCX>117578</sizeVertCX><sizeVertCY>234467</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 
