@@ -3994,14 +3994,6 @@ Discarded input sections
                 0x00000000       0x1c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc.o
  .text.SysTick_State
                 0x00000000       0x1c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc.o
- .text          0x00000000        0x0 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc_2.o
- .data          0x00000000        0x0 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc_2.o
- .bss           0x00000000        0x0 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc_2.o
- .text.printf_no_mbed
-                0x00000000       0x26 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc_2.o
- .comment       0x00000000       0x80 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc_2.o
- .ARM.attributes
-                0x00000000       0x31 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc_2.o
  .text          0x00000000        0x0 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/pin_device.o
  .data          0x00000000        0x0 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/pin_device.o
  .bss           0x00000000        0x0 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/pin_device.o
@@ -4039,6 +4031,7 @@ Discarded input sections
  .text.itoa     0x00000000       0x56 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
  .text.printnumb
                 0x00000000       0x1c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
+ .bss.c         0x00000000        0x4 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
  .rodata.printnumb.str1.1
                 0x00000000        0x3 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
  .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-calloc.o)
@@ -5111,7 +5104,6 @@ LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUEN
 LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_wdg.o
 LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/clock.o
 LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc.o
-LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc_2.o
 LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/pin_device.o
 LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/gpio_api.o
 LOAD ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/mbed_overrides.o
@@ -5139,7 +5131,7 @@ END GROUP
 LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtend.o
 LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
 
-.text           0x10040000     0xb234
+.text           0x10040000     0xb22c
  *(.isr_vector)
  .isr_vector    0x10040000       0xc0 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/TOOLCHAIN_GCC_ARM/startup_bluenrg1.o
                 0x10040000                g_pfnVectors
@@ -5640,319 +5632,319 @@ LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/g
                 0x10041a1c       0x64 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
                 0x10041a1c                us_ticker_init
  .text.us_ticker_read
-                0x10041a80       0x30 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
+                0x10041a80       0x28 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
                 0x10041a80                us_ticker_read
  .text.us_ticker_set_interrupt
-                0x10041ab0       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
-                0x10041ab0                us_ticker_set_interrupt
+                0x10041aa8       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
+                0x10041aa8                us_ticker_set_interrupt
  .text.us_ticker_disable_interrupt
-                0x10041ac0       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
-                0x10041ac0                us_ticker_disable_interrupt
+                0x10041ab8       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
+                0x10041ab8                us_ticker_disable_interrupt
  .text.us_ticker_clear_interrupt
-                0x10041ad0        0x2 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
-                0x10041ad0                us_ticker_clear_interrupt
+                0x10041ac8        0x2 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
+                0x10041ac8                us_ticker_clear_interrupt
  .text.us_ticker_fire_interrupt
-                0x10041ad2        0x2 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
-                0x10041ad2                us_ticker_fire_interrupt
+                0x10041aca        0x2 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
+                0x10041aca                us_ticker_fire_interrupt
  .text._calloc_r
-                0x10041ad4       0x58 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-callocr.o)
-                0x10041ad4                _calloc_r
- .text.__errno  0x10041b2c        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-errno.o)
-                0x10041b2c                __errno
+                0x10041acc       0x58 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-callocr.o)
+                0x10041acc                _calloc_r
+ .text.__errno  0x10041b24        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-errno.o)
+                0x10041b24                __errno
  .text._fclose_r
-                0x10041b38       0xcc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fclose.o)
-                0x10041b38                _fclose_r
- .text.fclose   0x10041c04       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fclose.o)
-                0x10041c04                fclose
+                0x10041b30       0xcc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fclose.o)
+                0x10041b30                _fclose_r
+ .text.fclose   0x10041bfc       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fclose.o)
+                0x10041bfc                fclose
  .text.__sflush_r
-                0x10041c18      0x150 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fflush.o)
-                0x10041c18                __sflush_r
+                0x10041c10      0x150 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fflush.o)
+                0x10041c10                __sflush_r
  .text._fflush_r
-                0x10041d68       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fflush.o)
-                0x10041d68                _fflush_r
- .text.fflush   0x10041dbc       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fflush.o)
-                0x10041dbc                fflush
+                0x10041d60       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fflush.o)
+                0x10041d60                _fflush_r
+ .text.fflush   0x10041db4       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fflush.o)
+                0x10041db4                fflush
  .text._cleanup_r
-                0x10041de4       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
-                0x10041de4                _cleanup_r
+                0x10041ddc       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
+                0x10041ddc                _cleanup_r
  .text.std.isra.0
-                0x10041df4       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
+                0x10041dec       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x10041e44       0x30 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
-                0x10041e44                __sfmoreglue
- .text.__sinit  0x10041e74       0x60 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
-                0x10041e74                __sinit
- .text.__sfp    0x10041ed4       0xac c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
-                0x10041ed4                __sfp
+                0x10041e3c       0x30 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
+                0x10041e3c                __sfmoreglue
+ .text.__sinit  0x10041e6c       0x60 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
+                0x10041e6c                __sinit
+ .text.__sfp    0x10041ecc       0xac c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
+                0x10041ecc                __sfp
  .text.__sfp_lock_acquire
-                0x10041f80       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
-                0x10041f80                __sfp_lock_acquire
+                0x10041f78       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
+                0x10041f78                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x10041f90       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
-                0x10041f90                __sfp_lock_release
+                0x10041f88       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-findfp.o)
+                0x10041f88                __sfp_lock_release
  .text._fopen_r
-                0x10041fa0       0xac c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fopen.o)
-                0x10041fa0                _fopen_r
- .text.fopen    0x1004204c       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fopen.o)
-                0x1004204c                fopen
+                0x10041f98       0xac c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fopen.o)
+                0x10041f98                _fopen_r
+ .text.fopen    0x10042044       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fopen.o)
+                0x10042044                fopen
  .text._malloc_trim_r
-                0x10042064       0xa0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-freer.o)
-                0x10042064                _malloc_trim_r
- .text._free_r  0x10042104      0x1bc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-freer.o)
-                0x10042104                _free_r
+                0x1004205c       0xa0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-freer.o)
+                0x1004205c                _malloc_trim_r
+ .text._free_r  0x100420fc      0x1bc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-freer.o)
+                0x100420fc                _free_r
  .text._fseek_r
-                0x100422c0        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fseek.o)
-                0x100422c0                _fseek_r
+                0x100422b8        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fseek.o)
+                0x100422b8                _fseek_r
  .text._fseeko_r
-                0x100422c8      0x33c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fseeko.o)
-                0x100422c8                _fseeko_r
+                0x100422c0      0x33c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fseeko.o)
+                0x100422c0                _fseeko_r
  .text._fstat_r
-                0x10042604       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fstatr.o)
-                0x10042604                _fstat_r
+                0x100425fc       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fstatr.o)
+                0x100425fc                _fstat_r
  .text.__sfvwrite_r
-                0x1004262c      0x304 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fvwrite.o)
-                0x1004262c                __sfvwrite_r
- .text._fwalk   0x10042930       0x44 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fwalk.o)
-                0x10042930                _fwalk
+                0x10042624      0x304 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fvwrite.o)
+                0x10042624                __sfvwrite_r
+ .text._fwalk   0x10042928       0x44 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fwalk.o)
+                0x10042928                _fwalk
  .text._fwalk_reent
-                0x10042974       0x4c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fwalk.o)
-                0x10042974                _fwalk_reent
+                0x1004296c       0x4c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fwalk.o)
+                0x1004296c                _fwalk_reent
  .text.__libc_init_array
-                0x100429c0       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-init.o)
-                0x100429c0                __libc_init_array
+                0x100429b8       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-init.o)
+                0x100429b8                __libc_init_array
  .text.__retarget_lock_init_recursive
-                0x10042a08        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
-                0x10042a08                __retarget_lock_init_recursive
+                0x10042a00        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
+                0x10042a00                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x10042a0c        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
-                0x10042a0c                __retarget_lock_close_recursive
+                0x10042a04        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
+                0x10042a04                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x10042a10        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
-                0x10042a10                __retarget_lock_acquire_recursive
+                0x10042a08        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
+                0x10042a08                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x10042a14        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
-                0x10042a14                __retarget_lock_release_recursive
+                0x10042a0c        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
+                0x10042a0c                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x10042a18       0x60 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-makebuf.o)
-                0x10042a18                __swhatbuf_r
+                0x10042a10       0x60 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-makebuf.o)
+                0x10042a10                __swhatbuf_r
  .text.__smakebuf_r
-                0x10042a78       0x90 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-makebuf.o)
-                0x10042a78                __smakebuf_r
- .text.malloc   0x10042b08       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-malloc.o)
-                0x10042b08                malloc
- .text.free     0x10042b1c       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-malloc.o)
-                0x10042b1c                free
+                0x10042a70       0x90 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-makebuf.o)
+                0x10042a70                __smakebuf_r
+ .text.malloc   0x10042b00       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-malloc.o)
+                0x10042b00                malloc
+ .text.free     0x10042b14       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-malloc.o)
+                0x10042b14                free
  .text._malloc_r
-                0x10042b30      0x568 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
-                0x10042b30                _malloc_r
- .text.memchr   0x10043098       0x80 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memchr-stub.o)
-                0x10043098                memchr
- .text.memcpy   0x10043118       0x84 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memcpy-stub.o)
-                0x10043118                memcpy
- .text.memmove  0x1004319c       0xa0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memmove.o)
-                0x1004319c                memmove
- .text.memset   0x1004323c       0x94 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memset.o)
-                0x1004323c                memset
- .text._open_r  0x100432d0       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-openr.o)
-                0x100432d0                _open_r
+                0x10042b28      0x568 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
+                0x10042b28                _malloc_r
+ .text.memchr   0x10043090       0x80 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memchr-stub.o)
+                0x10043090                memchr
+ .text.memcpy   0x10043110       0x84 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memcpy-stub.o)
+                0x10043110                memcpy
+ .text.memmove  0x10043194       0xa0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memmove.o)
+                0x10043194                memmove
+ .text.memset   0x10043234       0x94 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-memset.o)
+                0x10043234                memset
+ .text._open_r  0x100432c8       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-openr.o)
+                0x100432c8                _open_r
  .text._realloc_r
-                0x100432f8      0x37c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-reallocr.o)
-                0x100432f8                _realloc_r
- .text.lflush   0x10043674       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-refill.o)
+                0x100432f0      0x37c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-reallocr.o)
+                0x100432f0                _realloc_r
+ .text.lflush   0x1004366c       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-refill.o)
  .text.__srefill_r
-                0x10043690      0x11c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-refill.o)
-                0x10043690                __srefill_r
- .text._sbrk_r  0x100437ac       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-sbrkr.o)
-                0x100437ac                _sbrk_r
- .text.setbuf   0x100437d0       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-setbuf.o)
-                0x100437d0                setbuf
- .text.setvbuf  0x100437e4      0x1a0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-setvbuf.o)
-                0x100437e4                setvbuf
- .text.__sread  0x10043984       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
-                0x10043984                __sread
+                0x10043688      0x11c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-refill.o)
+                0x10043688                __srefill_r
+ .text._sbrk_r  0x100437a4       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-sbrkr.o)
+                0x100437a4                _sbrk_r
+ .text.setbuf   0x100437c8       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-setbuf.o)
+                0x100437c8                setbuf
+ .text.setvbuf  0x100437dc      0x1a0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-setvbuf.o)
+                0x100437dc                setvbuf
+ .text.__sread  0x1004397c       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
+                0x1004397c                __sread
  .text.__swrite
-                0x100439ac       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
-                0x100439ac                __swrite
- .text.__sseek  0x100439e8       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
-                0x100439e8                __sseek
+                0x100439a4       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
+                0x100439a4                __swrite
+ .text.__sseek  0x100439e0       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
+                0x100439e0                __sseek
  .text.__sclose
-                0x10043a14        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
-                0x10043a14                __sclose
- .text          0x10043a20       0x88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-strcmp.o)
-                0x10043a20                strcmp
- .text.strlen   0x10043aa8       0x64 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-strlen-stub.o)
-                0x10043aa8                strlen
- .text.strncmp  0x10043b0c       0x94 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-strncmp.o)
-                0x10043b0c                strncmp
+                0x10043a0c        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-stdio.o)
+                0x10043a0c                __sclose
+ .text          0x10043a18       0x88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-strcmp.o)
+                0x10043a18                strcmp
+ .text.strlen   0x10043aa0       0x64 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-strlen-stub.o)
+                0x10043aa0                strlen
+ .text.strncmp  0x10043b04       0x94 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-strncmp.o)
+                0x10043b04                strncmp
  .text._svfprintf_r
-                0x10043ba0     0x1608 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
-                0x10043ba0                _svfprintf_r
+                0x10043b98     0x1608 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
+                0x10043b98                _svfprintf_r
  .text._vfprintf_r
-                0x100451a8     0x16d8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
-                0x100451a8                _vfprintf_r
+                0x100451a0     0x16d8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
+                0x100451a0                _vfprintf_r
  .text.vfprintf
-                0x10046880       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
-                0x10046880                vfprintf
+                0x10046878       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
+                0x10046878                vfprintf
  .text.__sbprintf
-                0x10046898       0x88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
+                0x10046890       0x88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
  .text._vsnprintf_r
-                0x10046920       0x74 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vsnprintf.o)
-                0x10046920                _vsnprintf_r
+                0x10046918       0x74 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vsnprintf.o)
+                0x10046918                _vsnprintf_r
  .text.vsnprintf
-                0x10046994       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vsnprintf.o)
-                0x10046994                vsnprintf
+                0x1004698c       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vsnprintf.o)
+                0x1004698c                vsnprintf
  .text.__swbuf_r
-                0x100469b4       0xbc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wbuf.o)
-                0x100469b4                __swbuf_r
+                0x100469ac       0xbc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wbuf.o)
+                0x100469ac                __swbuf_r
  .text._write_r
-                0x10046a70       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-writer.o)
-                0x10046a70                _write_r
+                0x10046a68       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-writer.o)
+                0x10046a68                _write_r
  .text.__swsetup_r
-                0x10046a98       0xd4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wsetup.o)
-                0x10046a98                __swsetup_r
+                0x10046a90       0xd4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wsetup.o)
+                0x10046a90                __swsetup_r
  .text._close_r
-                0x10046b6c       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-closer.o)
-                0x10046b6c                _close_r
- .text.quorem   0x10046b90      0x154 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-dtoa.o)
- .text._dtoa_r  0x10046ce4      0xf88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-dtoa.o)
-                0x10046ce4                _dtoa_r
+                0x10046b64       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-closer.o)
+                0x10046b64                _close_r
+ .text.quorem   0x10046b88      0x154 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x10046cdc      0xf88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-dtoa.o)
+                0x10046cdc                _dtoa_r
  .text.__sflags
-                0x10047c6c       0x9c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-flags.o)
-                0x10047c6c                __sflags
+                0x10047c64       0x9c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-flags.o)
+                0x10047c64                __sflags
  .text._isatty_r
-                0x10047d08       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-isattyr.o)
-                0x10047d08                _isatty_r
+                0x10047d00       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-isattyr.o)
+                0x10047d00                _isatty_r
  .text.__locale_mb_cur_max
-                0x10047d2c       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-locale.o)
-                0x10047d2c                __locale_mb_cur_max
+                0x10047d24       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-locale.o)
+                0x10047d24                __locale_mb_cur_max
  .text._localeconv_r
-                0x10047d4c       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-localeconv.o)
-                0x10047d4c                _localeconv_r
+                0x10047d44       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-localeconv.o)
+                0x10047d44                _localeconv_r
  .text._lseek_r
-                0x10047d68       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lseekr.o)
-                0x10047d68                _lseek_r
+                0x10047d60       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lseekr.o)
+                0x10047d60                _lseek_r
  .text.__ascii_mbtowc
-                0x10047d90       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mbtowc_r.o)
-                0x10047d90                __ascii_mbtowc
- .text._Balloc  0x10047dbc       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10047dbc                _Balloc
- .text._Bfree   0x10047e0c       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10047e0c                _Bfree
+                0x10047d88       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mbtowc_r.o)
+                0x10047d88                __ascii_mbtowc
+ .text._Balloc  0x10047db4       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10047db4                _Balloc
+ .text._Bfree   0x10047e04       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10047e04                _Bfree
  .text.__multadd
-                0x10047e20       0x8c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10047e20                __multadd
+                0x10047e18       0x8c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10047e18                __multadd
  .text.__hi0bits
-                0x10047eac       0x34 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10047eac                __hi0bits
+                0x10047ea4       0x34 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10047ea4                __hi0bits
  .text.__lo0bits
-                0x10047ee0       0x5c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10047ee0                __lo0bits
- .text.__i2b    0x10047f3c       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10047f3c                __i2b
+                0x10047ed8       0x5c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10047ed8                __lo0bits
+ .text.__i2b    0x10047f34       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10047f34                __i2b
  .text.__multiply
-                0x10047f50      0x154 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10047f50                __multiply
+                0x10047f48      0x154 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10047f48                __multiply
  .text.__pow5mult
-                0x100480a4       0xc0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x100480a4                __pow5mult
+                0x1004809c       0xc0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x1004809c                __pow5mult
  .text.__lshift
-                0x10048164       0xc0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10048164                __lshift
- .text.__mcmp   0x10048224       0x34 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10048224                __mcmp
- .text.__mdiff  0x10048258      0x138 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10048258                __mdiff
- .text.__d2b    0x10048390       0xbc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x10048390                __d2b
- .text._read_r  0x1004844c       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-readr.o)
-                0x1004844c                _read_r
+                0x1004815c       0xc0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x1004815c                __lshift
+ .text.__mcmp   0x1004821c       0x34 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x1004821c                __mcmp
+ .text.__mdiff  0x10048250      0x138 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10048250                __mdiff
+ .text.__d2b    0x10048388       0xbc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x10048388                __d2b
+ .text._read_r  0x10048444       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-readr.o)
+                0x10048444                _read_r
  .text.__ssprint_r
-                0x10048474      0x120 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfiprintf.o)
-                0x10048474                __ssprint_r
+                0x1004846c      0x120 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfiprintf.o)
+                0x1004846c                __ssprint_r
  .text.__sprint_r.part.0
-                0x10048594       0x84 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfiprintf.o)
+                0x1004858c       0x84 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x10048618       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfiprintf.o)
-                0x10048618                __sprint_r
+                0x10048610       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfiprintf.o)
+                0x10048610                __sprint_r
  .text.__ascii_wctomb
-                0x1004862c       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wctomb_r.o)
-                0x1004862c                __ascii_wctomb
+                0x10048624       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wctomb_r.o)
+                0x10048624                __ascii_wctomb
  .text.__fputwc
-                0x10048648       0x98 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fputwc.o)
-                0x10048648                __fputwc
+                0x10048640       0x98 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fputwc.o)
+                0x10048640                __fputwc
  .text._fputwc_r
-                0x100486e0       0x5c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fputwc.o)
-                0x100486e0                _fputwc_r
+                0x100486d8       0x5c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-fputwc.o)
+                0x100486d8                _fputwc_r
  .text._wcrtomb_r
-                0x1004873c       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wcrtomb.o)
-                0x1004873c                _wcrtomb_r
- .text          0x10048790      0x114 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
-                0x10048790                __aeabi_uidiv
-                0x10048790                __udivsi3
-                0x1004889c                __aeabi_uidivmod
- .text          0x100488a4      0x1d4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_divsi3.o)
-                0x100488a4                __divsi3
-                0x100488a4                __aeabi_idiv
-                0x10048a70                __aeabi_idivmod
- .text          0x10048a78        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
-                0x10048a78                __aeabi_idiv0
-                0x10048a78                __aeabi_ldiv0
- .text          0x10048a7c       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_ashldi3.o)
-                0x10048a7c                __aeabi_llsl
-                0x10048a7c                __ashldi3
- .text          0x10048a94       0x7c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpdf2.o)
-                0x10048a94                __aeabi_cdrcmple
-                0x10048aa4                __aeabi_cdcmple
-                0x10048aa4                __aeabi_cdcmpeq
-                0x10048ab4                __aeabi_dcmpeq
-                0x10048ac0                __aeabi_dcmplt
-                0x10048ad4                __aeabi_dcmple
-                0x10048ae8                __aeabi_dcmpgt
-                0x10048afc                __aeabi_dcmpge
- .text          0x10048b10       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_aeabi_uldivmod.o)
-                0x10048b10                __aeabi_uldivmod
- .text          0x10048b50       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_muldi3.o)
-                0x10048b50                __muldi3
-                0x10048b50                __aeabi_lmul
- .text          0x10048ba4      0x180 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
-                0x10048ba4                __udivmoddi4
- .text          0x10048d24      0x620 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(adddf3.o)
-                0x10048d24                __aeabi_dadd
- .text          0x10049344      0x668 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divdf3.o)
-                0x10049344                __aeabi_ddiv
- .text          0x100499ac       0x74 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqdf2.o)
-                0x100499ac                __nedf2
-                0x100499ac                __eqdf2
- .text          0x10049a20       0xc8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gedf2.o)
-                0x10049a20                __gedf2
-                0x10049a20                __gtdf2
- .text          0x10049ae8       0xc4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(ledf2.o)
-                0x10049ae8                __ledf2
-                0x10049ae8                __ltdf2
- .text          0x10049bac      0x500 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(muldf3.o)
-                0x10049bac                __aeabi_dmul
- .text          0x1004a0ac      0x62c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(subdf3.o)
-                0x1004a0ac                __aeabi_dsub
- .text          0x1004a6d8       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(unorddf2.o)
-                0x1004a6d8                __aeabi_dcmpun
- .text          0x1004a718       0x68 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixdfsi.o)
-                0x1004a718                __aeabi_d2iz
- .text          0x1004a780       0x84 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsidf.o)
-                0x1004a780                __aeabi_i2d
- .text          0x1004a804       0x70 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsidf.o)
-                0x1004a804                __aeabi_ui2d
- .text          0x1004a874       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
-                0x1004a874                __clzsi2
- .text          0x1004a8b0       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzdi2.o)
-                0x1004a8b0                __clzdi2
+                0x10048734       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-wcrtomb.o)
+                0x10048734                _wcrtomb_r
+ .text          0x10048788      0x114 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
+                0x10048788                __aeabi_uidiv
+                0x10048788                __udivsi3
+                0x10048894                __aeabi_uidivmod
+ .text          0x1004889c      0x1d4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_divsi3.o)
+                0x1004889c                __divsi3
+                0x1004889c                __aeabi_idiv
+                0x10048a68                __aeabi_idivmod
+ .text          0x10048a70        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
+                0x10048a70                __aeabi_idiv0
+                0x10048a70                __aeabi_ldiv0
+ .text          0x10048a74       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_ashldi3.o)
+                0x10048a74                __aeabi_llsl
+                0x10048a74                __ashldi3
+ .text          0x10048a8c       0x7c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpdf2.o)
+                0x10048a8c                __aeabi_cdrcmple
+                0x10048a9c                __aeabi_cdcmple
+                0x10048a9c                __aeabi_cdcmpeq
+                0x10048aac                __aeabi_dcmpeq
+                0x10048ab8                __aeabi_dcmplt
+                0x10048acc                __aeabi_dcmple
+                0x10048ae0                __aeabi_dcmpgt
+                0x10048af4                __aeabi_dcmpge
+ .text          0x10048b08       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_aeabi_uldivmod.o)
+                0x10048b08                __aeabi_uldivmod
+ .text          0x10048b48       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_muldi3.o)
+                0x10048b48                __muldi3
+                0x10048b48                __aeabi_lmul
+ .text          0x10048b9c      0x180 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
+                0x10048b9c                __udivmoddi4
+ .text          0x10048d1c      0x620 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(adddf3.o)
+                0x10048d1c                __aeabi_dadd
+ .text          0x1004933c      0x668 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divdf3.o)
+                0x1004933c                __aeabi_ddiv
+ .text          0x100499a4       0x74 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqdf2.o)
+                0x100499a4                __nedf2
+                0x100499a4                __eqdf2
+ .text          0x10049a18       0xc8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gedf2.o)
+                0x10049a18                __gedf2
+                0x10049a18                __gtdf2
+ .text          0x10049ae0       0xc4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(ledf2.o)
+                0x10049ae0                __ledf2
+                0x10049ae0                __ltdf2
+ .text          0x10049ba4      0x500 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(muldf3.o)
+                0x10049ba4                __aeabi_dmul
+ .text          0x1004a0a4      0x62c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(subdf3.o)
+                0x1004a0a4                __aeabi_dsub
+ .text          0x1004a6d0       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(unorddf2.o)
+                0x1004a6d0                __aeabi_dcmpun
+ .text          0x1004a710       0x68 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixdfsi.o)
+                0x1004a710                __aeabi_d2iz
+ .text          0x1004a778       0x84 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsidf.o)
+                0x1004a778                __aeabi_i2d
+ .text          0x1004a7fc       0x70 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsidf.o)
+                0x1004a7fc                __aeabi_ui2d
+ .text          0x1004a86c       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
+                0x1004a86c                __clzsi2
+ .text          0x1004a8a8       0x18 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzdi2.o)
+                0x1004a8a8                __clzdi2
  *(.init)
- .init          0x1004a8c8        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x1004a8c8                _init
- .init          0x1004a8cc        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+ .init          0x1004a8c0        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x1004a8c0                _init
+ .init          0x1004a8c4        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
  *(.fini)
- .fini          0x1004a8d4        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x1004a8d4                _fini
- .fini          0x1004a8d8        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+ .fini          0x1004a8cc        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x1004a8cc                _fini
+ .fini          0x1004a8d0        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -5965,137 +5957,137 @@ LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/g
  *(.dtors)
  *(.rodata*)
  .rodata.main.str1.1
-                0x1004a8e0        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/./main.o
+                0x1004a8d8        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/./main.o
  .rodata._ZTVN4mbed6SerialE
-                0x1004a8e8       0x8c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/drivers/Serial.o
-                0x1004a8e8                vtable for mbed::Serial
+                0x1004a8e0       0x8c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/drivers/Serial.o
+                0x1004a8e0                vtable for mbed::Serial
  .rodata._ZN4mbed10SerialBase12_irq_handlerEm9SerialIrq.str1.1
-                0x1004a974       0x23 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/drivers/SerialBase.o
- *fill*         0x1004a997        0x1 
+                0x1004a96c       0x23 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/drivers/SerialBase.o
+ *fill*         0x1004a98f        0x1 
  .rodata._ZTVN4mbed10SerialBaseE
-                0x1004a998       0x18 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/drivers/SerialBase.o
-                0x1004a998                vtable for mbed::SerialBase
+                0x1004a990       0x18 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/drivers/SerialBase.o
+                0x1004a990                vtable for mbed::SerialBase
  .rodata._ZN12SingletonPtrI13PlatformMutexE3getEv.str1.1
-                0x1004a9b0       0x36 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/features/filesystem/fat/FATFileSystem.o
+                0x1004a9a8       0x36 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/features/filesystem/fat/FATFileSystem.o
  .rodata.initialize.part.2.str1.1
-                0x1004a9e6       0x22 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/hal/mbed_ticker_api.o
+                0x1004a9de       0x22 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/hal/mbed_ticker_api.o
  .rodata.us_data
-                0x1004aa08        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
+                0x1004aa00        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
  .rodata.us_interface
-                0x1004aa10       0x1c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
+                0x1004aa08       0x1c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
  .rodata._ZTVN4mbed8FileBaseE
-                0x1004aa2c       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/FileBase.o
-                0x1004aa2c                vtable for mbed::FileBase
+                0x1004aa24       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/FileBase.o
+                0x1004aa24                vtable for mbed::FileBase
  .rodata._ZTVN4mbed10FileHandleE
-                0x1004aa3c       0x4c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/FileHandle.o
-                0x1004aa3c                vtable for mbed::FileHandle
+                0x1004aa34       0x4c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/FileHandle.o
+                0x1004aa34                vtable for mbed::FileHandle
  .rodata._ZTVN4mbed8FileLikeE
-                0x1004aa88       0x5c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/Stream.o
-                0x1004aa88                vtable for mbed::FileLike
+                0x1004aa80       0x5c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/Stream.o
+                0x1004aa80                vtable for mbed::FileLike
  .rodata._ZN4mbed6StreamC2EPKc.str1.1
-                0x1004aae4       0x22 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/Stream.o
- *fill*         0x1004ab06        0x2 
+                0x1004aadc       0x22 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/Stream.o
+ *fill*         0x1004aafe        0x2 
  .rodata._ZTVN4mbed6StreamE
-                0x1004ab08       0x6c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/Stream.o
-                0x1004ab08                vtable for mbed::Stream
+                0x1004ab00       0x6c ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/Stream.o
+                0x1004ab00                vtable for mbed::Stream
  .rodata.mbed_assert_internal.str1.1
-                0x1004ab74       0x31 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_assert.o
+                0x1004ab6c       0x31 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_assert.o
  .rodata.core_util_critical_section_enter.str1.1
-                0x1004aba5       0x5d ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_critical.o
- *fill*         0x1004ac02        0x2 
+                0x1004ab9d       0x5d ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_critical.o
+ *fill*         0x1004abfa        0x2 
  .rodata._ZZ18us_ticker_get_infoE4info
-                0x1004ac04        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
+                0x1004abfc        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
  .rodata.__stderr_name
-                0x1004ac0c        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
-                0x1004ac0c                __stderr_name
+                0x1004ac04        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
+                0x1004ac04                __stderr_name
  .rodata.__stdin_name
-                0x1004ac14        0x7 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
-                0x1004ac14                __stdin_name
+                0x1004ac0c        0x7 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
+                0x1004ac0c                __stdin_name
  .rodata.__stdout_name
-                0x1004ac1b        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
-                0x1004ac1b                __stdout_name
- .rodata        0x1004ac23       0x19 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/system_bluenrg1.o
+                0x1004ac13        0x8 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/platform/mbed_retarget.o
+                0x1004ac13                __stdout_name
+ .rodata        0x1004ac1b       0x19 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/system_bluenrg1.o
  .rodata._global_impure_ptr
-                0x1004ac3c        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-impure.o)
-                0x1004ac3c                _global_impure_ptr
+                0x1004ac34        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-impure.o)
+                0x1004ac34                _global_impure_ptr
  .rodata._svfprintf_r
-                0x1004ac40      0x164 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
+                0x1004ac38      0x164 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
  .rodata._svfprintf_r.str1.4
-                0x1004ada4       0x42 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
- *fill*         0x1004ade6        0x2 
+                0x1004ad9c       0x42 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
+ *fill*         0x1004adde        0x2 
  .rodata.blanks.7223
-                0x1004ade8       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
+                0x1004ade0       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
  .rodata.zeroes.7224
-                0x1004adf8       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
+                0x1004adf0       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-svfprintf.o)
  .rodata._vfprintf_r
-                0x1004ae08      0x164 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
+                0x1004ae00      0x164 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
  .rodata._vfprintf_r.str1.4
-                0x1004af6c       0x42 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
+                0x1004af64       0x42 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
  .rodata.blanks.7238
-                0x1004af6c       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
+                0x1004af64       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
  .rodata.zeroes.7239
-                0x1004af7c       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
+                0x1004af74       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-vfprintf.o)
  .rodata._dtoa_r.str1.4
-                0x1004af8c       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-dtoa.o)
+                0x1004af84       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-dtoa.o)
                                  0x12 (size before relaxing)
  .rodata._setlocale_r.str1.4
-                0x1004af9c        0xa c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-locale.o)
+                0x1004af94        0xa c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-locale.o)
                                   0xd (size before relaxing)
- *fill*         0x1004afa6        0x2 
+ *fill*         0x1004af9e        0x2 
  .rodata.str1.4
-                0x1004afa8        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-locale.o)
+                0x1004afa0        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-locale.o)
                                   0x2 (size before relaxing)
- *fill*         0x1004afac        0x4 
+ *fill*         0x1004afa4        0x4 
  .rodata.__mprec_bigtens
-                0x1004afb0       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x1004afb0                __mprec_bigtens
+                0x1004afa8       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x1004afa8                __mprec_bigtens
  .rodata.__mprec_tens
-                0x1004afd8       0xc8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
-                0x1004afd8                __mprec_tens
+                0x1004afd0       0xc8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x1004afd0                __mprec_tens
  .rodata.p05.6055
-                0x1004b0a0        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
+                0x1004b098        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mprec.o)
  .rodata._ctype_
-                0x1004b0ac      0x101 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-ctype_.o)
-                0x1004b0ac                _ctype_
- *fill*         0x1004b1ad        0x3 
- .rodata        0x1004b1b0       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divdf3.o)
- .rodata        0x1004b1f0       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(muldf3.o)
+                0x1004b0a4      0x101 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-ctype_.o)
+                0x1004b0a4                _ctype_
+ *fill*         0x1004b1a5        0x3 
+ .rodata        0x1004b1a8       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divdf3.o)
+ .rodata        0x1004b1e8       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(muldf3.o)
  *(.eh_frame*)
- .eh_frame      0x1004b230        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
- .eh_frame      0x1004b230        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtend.o
+ .eh_frame      0x1004b228        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .eh_frame      0x1004b228        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtend.o
 
-.glue_7         0x1004b234        0x0
- .glue_7        0x1004b234        0x0 linker stubs
+.glue_7         0x1004b22c        0x0
+ .glue_7        0x1004b22c        0x0 linker stubs
 
-.glue_7t        0x1004b234        0x0
- .glue_7t       0x1004b234        0x0 linker stubs
+.glue_7t        0x1004b22c        0x0
+ .glue_7t       0x1004b22c        0x0 linker stubs
 
-.vfp11_veneer   0x1004b234        0x0
- .vfp11_veneer  0x1004b234        0x0 linker stubs
+.vfp11_veneer   0x1004b22c        0x0
+ .vfp11_veneer  0x1004b22c        0x0 linker stubs
 
-.v4_bx          0x1004b234        0x0
- .v4_bx         0x1004b234        0x0 linker stubs
+.v4_bx          0x1004b22c        0x0
+ .v4_bx         0x1004b22c        0x0 linker stubs
 
-.iplt           0x1004b234        0x0
- .iplt          0x1004b234        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x1004b22c        0x0
+ .iplt          0x1004b22c        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x1004b234                __exidx_start = .
+                0x1004b22c                __exidx_start = .
 
-.ARM.exidx      0x1004b234        0x8
+.ARM.exidx      0x1004b22c        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x1004b234        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
- .ARM.exidx     0x1004b23c        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x1004b22c        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .ARM.exidx     0x1004b234        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x1004b23c                __exidx_end = .
-                0x1004b23c                __etext = .
-                0x1004b23c                _sidata = .
+                0x1004b234                __exidx_end = .
+                0x1004b234                __etext = .
+                0x1004b234                _sidata = .
 
-.rel.dyn        0x1004b23c        0x0
- .rel.iplt      0x1004b23c        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x1004b234        0x0
+ .rel.iplt      0x1004b234        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.data           0x20000000      0x9c4 load address 0x1004b23c
+.data           0x20000000      0x9c4 load address 0x1004b234
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = .
  *(vtable)
@@ -6146,10 +6138,10 @@ LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/g
                 0x200009c4                __data_end__ = .
                 0x200009c4                _edata = .
 
-.igot.plt       0x200009c4        0x0 load address 0x1004bc00
+.igot.plt       0x200009c4        0x0 load address 0x1004bbf8
  .igot.plt      0x200009c4        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.bss            0x200009c8      0x26c load address 0x1004bc08
+.bss            0x200009c8      0x268 load address 0x1004bc00
                 0x200009c8                . = ALIGN (0x4)
                 0x200009c8                __bss_start__ = .
                 0x200009c8                _sbss = .
@@ -6193,49 +6185,47 @@ LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/g
                 0x20000bb8                stdio_uart_inited
  .bss.b         0x20000bbc        0x4 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
                 0x20000bbc                b
- .bss.c         0x20000bc0        0x4 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
-                0x20000bc0                c
- .bss.carry     0x20000bc4        0x4 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
-                0x20000bc4                carry
+ .bss.carry     0x20000bc0        0x4 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/us_ticker_api.o
+                0x20000bc0                carry
  .bss.__malloc_current_mallinfo
-                0x20000bc8       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
-                0x20000bc8                __malloc_current_mallinfo
+                0x20000bc4       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
+                0x20000bc4                __malloc_current_mallinfo
  .bss.__malloc_max_sbrked_mem
-                0x20000bf0        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
-                0x20000bf0                __malloc_max_sbrked_mem
+                0x20000bec        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
+                0x20000bec                __malloc_max_sbrked_mem
  .bss.__malloc_max_total_mem
-                0x20000bf4        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
-                0x20000bf4                __malloc_max_total_mem
+                0x20000bf0        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
+                0x20000bf0                __malloc_max_total_mem
  .bss.__malloc_top_pad
-                0x20000bf8        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
-                0x20000bf8                __malloc_top_pad
+                0x20000bf4        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-mallocr.o)
+                0x20000bf4                __malloc_top_pad
  *(COMMON)
- COMMON         0x20000bfc       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/serial_api.o
-                0x20000bfc                stdio_uart
- COMMON         0x20000c0c       0x21 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
-                0x20000c0c                __lock___atexit_recursive_mutex
-                0x20000c10                __lock___arc4random_mutex
-                0x20000c14                __lock___env_recursive_mutex
-                0x20000c18                __lock___sinit_recursive_mutex
-                0x20000c1c                __lock___malloc_recursive_mutex
-                0x20000c20                __lock___at_quick_exit_mutex
-                0x20000c24                __lock___dd_hash_mutex
-                0x20000c28                __lock___tz_mutex
-                0x20000c2c                __lock___sfp_recursive_mutex
- *fill*         0x20000c2d        0x3 
- COMMON         0x20000c30        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-reent.o)
-                0x20000c30                errno
-                0x20000c34                . = ALIGN (0x4)
-                0x20000c34                __bss_end__ = .
-                0x20000c34                _ebss = .
+ COMMON         0x20000bf8       0x10 ./BUILD/STEVAL_IDB007V1/GCC_ARM/mbed-os/targets/TARGET_STMBLUE/serial_api.o
+                0x20000bf8                stdio_uart
+ COMMON         0x20000c08       0x21 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-lock.o)
+                0x20000c08                __lock___atexit_recursive_mutex
+                0x20000c0c                __lock___arc4random_mutex
+                0x20000c10                __lock___env_recursive_mutex
+                0x20000c14                __lock___sinit_recursive_mutex
+                0x20000c18                __lock___malloc_recursive_mutex
+                0x20000c1c                __lock___at_quick_exit_mutex
+                0x20000c20                __lock___dd_hash_mutex
+                0x20000c24                __lock___tz_mutex
+                0x20000c28                __lock___sfp_recursive_mutex
+ *fill*         0x20000c29        0x3 
+ COMMON         0x20000c2c        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-reent.o)
+                0x20000c2c                errno
+                0x20000c30                . = ALIGN (0x4)
+                0x20000c30                __bss_end__ = .
+                0x20000c30                _ebss = .
 
-.heap           0x20000c34        0x0
-                0x20000c34                __end__ = .
-                0x20000c34                end = __end__
+.heap           0x20000c30        0x0
+                0x20000c30                __end__ = .
+                0x20000c30                end = __end__
  *(.heap*)
-                0x20000c34                __HeapLimit = .
+                0x20000c30                __HeapLimit = .
 
-.stack_dummy    0x20000c34        0x0
+.stack_dummy    0x20000c30        0x0
  *(.stack*)
                 0x20006000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20006000                _estack = __StackTop

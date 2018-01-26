@@ -299,14 +299,14 @@
         "module": "mbed-os\\targets\\TARGET_STMBLUE\\us_ticker_api.o", 
         "size": {
             ".data": 0, 
-            ".bss": 12, 
-            ".text": 228
+            ".bss": 8, 
+            ".text": 220
         }
     }, 
     {
         "summary": {
-            "static_ram": 3120, 
-            "total_flash": 48186
+            "static_ram": 3116, 
+            "total_flash": 48178
         }
     }
 ]

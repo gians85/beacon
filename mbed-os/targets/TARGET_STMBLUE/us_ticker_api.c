@@ -56,9 +56,8 @@ void us_ticker_init(void){
 
 
 uint32_t us_ticker_read(){
-	b =  MFT_GetCounter2(MFT1);
-	c = (0x0000FFFF-b)+carry;
-	return (c);
+	b = MFT_GetCounter2(MFT1);
+	return (carry + (0x0000FFFF-b));
 }
 
 void us_ticker_set_interrupt(timestamp_t timestamp){
