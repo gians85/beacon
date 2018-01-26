@@ -6,8 +6,6 @@
 #include "gpio_api.h"		// arm
 #include "pinmap.h"			// arm
 #include "mbed_error.h"		// arm
-//#include "pin_device.h"		// stm
-#include "BlueNRG1_sysCtrl.h"
 #include "pin_device.h"
 
 //extern const uint32_t ll_pin_defines[16];

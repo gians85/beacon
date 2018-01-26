@@ -4,7 +4,7 @@
         "size": {
             ".data": 4, 
             ".bss": 9, 
-            ".text": 32
+            ".text": 36
         }
     }, 
     {
@@ -35,8 +35,8 @@
         "module": "main.o", 
         "size": {
             ".data": 4, 
-            ".bss": 100, 
-            ".text": 296
+            ".bss": 108, 
+            ".text": 320
         }
     }, 
     {
@@ -264,6 +264,14 @@
         }
     }, 
     {
+        "module": "mbed-os\\targets\\TARGET_STMBLUE\\TARGET_BLUENRG1\\pin_device.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 10
+        }
+    }, 
+    {
         "module": "mbed-os\\targets\\TARGET_STMBLUE\\gpio_api.o", 
         "size": {
             ".data": 0, 
@@ -280,14 +288,6 @@
         }
     }, 
     {
-        "module": "mbed-os\\targets\\TARGET_STMBLUE\\pin_device.o", 
-        "size": {
-            ".data": 0, 
-            ".bss": 0, 
-            ".text": 10
-        }
-    }, 
-    {
         "module": "mbed-os\\targets\\TARGET_STMBLUE\\serial_api.o", 
         "size": {
             ".data": 0, 
@@ -300,13 +300,13 @@
         "size": {
             ".data": 0, 
             ".bss": 12, 
-            ".text": 232
+            ".text": 228
         }
     }, 
     {
         "summary": {
-            "static_ram": 3112, 
-            "total_flash": 48162
+            "static_ram": 3120, 
+            "total_flash": 48186
         }
     }
 ]

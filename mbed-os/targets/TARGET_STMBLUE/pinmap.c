@@ -4,8 +4,7 @@
  */
 #include "mbed_assert.h"
 #include "pinmap.h"
-#include "system_bluenrg1.h"
-
+#include "bluenrg_x_device.h"
 
 
 void pin_function(PinName pin, int data){

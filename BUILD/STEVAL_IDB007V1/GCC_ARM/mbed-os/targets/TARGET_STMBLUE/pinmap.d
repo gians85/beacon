@@ -18,4 +18,4 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\targets\TARGET_STMBLUE\pinmap.o: \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/cmsis.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/misc.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/BlueNRG_x_device.h \
- mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/system_bluenrg1.h
+ mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/bluenrg_x_device.h

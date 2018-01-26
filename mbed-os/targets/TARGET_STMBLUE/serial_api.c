@@ -2,18 +2,13 @@
 
 #include "serial_api.h"
 #include "cmsis.h"
-#include "BlueNRG1_uart.h"
-#include "BlueNRG1_sysCtrl.h"
+#include "serial_device.h"
+#include "pin_device.h"
 
 
 int stdio_uart_inited = 0;
 serial_t stdio_uart;
 
-#define DEFAULT_BAUD 115200;
-
-#ifndef BAUDRATE
-#define BAUDRATE DEFAULT_BAUD
-#endif
 
 void serial_init(serial_t *obj, PinName tx, PinName rx){
 

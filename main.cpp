@@ -4,12 +4,19 @@
 //void mbed_die(void){};
 void mydelay(void);
 
+//InterruptIn button(PUSH1);
 DigitalOut led1(LED1);
 DigitalOut led2(LED2);
+DigitalOut led3(LED3);
 Serial pc(USBTX, USBRX);
+
+void flip() {
+    led3 = !led3;
+}
 
 int main() {
 	led2 = 1;
+	//button.rise(&flip);
 	pc.printf("Hello\n\r");
 	while(1){
 		led1 = !led1;

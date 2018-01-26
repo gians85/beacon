@@ -1,7 +1,7 @@
 BUILD\STEVAL_IDB007V1\GCC_ARM\.\test_env.o: \
- C:\Users\Gianluca\Desktop\mbed-os-gian-blue1-b05\mbed-os\features/unsupported\tests\mbed\env\test_env.cpp \
+ C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\mbed-os\features/unsupported\tests\mbed\env\test_env.cpp \
  BUILD\STEVAL_IDB007V1\GCC_ARM\mbed_config.h \
- C:\Users\Gianluca\Desktop\mbed-os-gian-blue1-b05\mbed-os\features/unsupported\tests\mbed\env\test_env.h \
+ C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\mbed-os\features/unsupported\tests\mbed\env\test_env.h \
  mbed-os/mbed.h mbed-os/features/filesystem/mbed_filesystem.h \
  mbed-os/platform/platform.h mbed-os/platform/mbed_retarget.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
@@ -23,8 +23,9 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\.\test_env.o: \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/BlueNRG_x_device.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PeripheralNames.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PinNames.h \
- mbed-os/targets/TARGET_STMBLUE/pin_device.h \
+ mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/pin_device.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_gpio.h \
+ mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_sysCtrl.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PinNames.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_uart.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PeripheralNames.h \
