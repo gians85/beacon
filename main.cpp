@@ -1,26 +1,35 @@
 #include "mbed.h"
-#include "serial_mylib.h"
 
 //void mbed_die(void){};
 void mydelay(void);
 
-//InterruptIn button(PUSH1);
-DigitalOut led1(LED1);
-DigitalOut led2(LED2);
-DigitalOut led3(LED3);
 Serial pc(USBTX, USBRX);
 
-void flip() {
-    led3 = !led3;
-}
+DigitalOut led1(LED1);
+DigitalOut led2(LED2);
+DigitalIn but1(PUSH1);
+
+//InterruptIn button(PUSH1);
 
 int main() {
 	led2 = 1;
 	//button.rise(&flip);
 	pc.printf("Hello\n\r");
+	but1.mode(NoPull);
+
+	/* BUTTON_1 initialization
+	SdkEvalPushButtonInit(BUTTON_1);
+	SdkEvalPushButtonIrq(BUTTON_1, IRQ_ON_BOTH_EDGE);*/
+
+	/* BUTTON_2 initialization
+	SdkEvalPushButtonInit(BUTTON_2);
+	SdkEvalPushButtonIrq(BUTTON_2, IRQ_ON_RISING_EDGE); */
+
 	while(1){
-		led1 = !led1;
-		wait_ms(50);
+		while (!but1){
+			led1 = !led1;
+			wait_ms(50);
+		}
 	}
 }
 

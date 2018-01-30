@@ -8,6 +8,8 @@
 #include "mbed_error.h"		// arm
 #include "pin_device.h"
 
+#include "serial_mylib.h"
+
 //extern const uint32_t ll_pin_defines[16];
 
 #define GPIOA_BASE GPIO_BASE
@@ -30,35 +32,52 @@ GPIO_TypeDef *Set_GPIO_Clock(uint32_t port_idx) {
 
 
 void gpio_mode(gpio_t *obj, PinMode mode) {
-	//mode? obj->GPIO_Pull=DISABLE : obj->GPIO_Pull=ENABLE;
-	if (mode)
-		obj->GPIO_Pull = DISABLE;
-	else
+	uint8_t current_mode = obj->GPIO_Mode;
+	if (mode){
 		obj->GPIO_Pull = ENABLE;
+	}
+	else{
+		obj->GPIO_Pull = DISABLE;
+	}
+	if (obj->GPIO_Mode==GPIO_Output) {
+		obj->GPIO_Pull = ENABLE;
+		obj->GPIO_HighPwr = ENABLE;
+	}
+	GPIO_Init(obj);
+	obj->GPIO_Mode = current_mode;
 }
 
 inline void gpio_dir(gpio_t *obj, PinDirection direction) {
-	if (direction)
-		obj->GPIO_Mode = GPIO_Input;
-	else
+	uint8_t current_mode;
+	if (direction){
 		obj->GPIO_Mode = GPIO_Output;
+		current_mode = GPIO_Output;
+		obj->GPIO_Pull = ENABLE;
+		obj->GPIO_HighPwr = ENABLE;
+	}
+	else{
+		obj->GPIO_Mode = GPIO_Input;
+		current_mode = GPIO_Input;
+		obj->GPIO_Pull = DISABLE;
+		obj->GPIO_HighPwr = DISABLE;
+	}
+	GPIO_Init(obj);
+	obj->GPIO_Mode = current_mode;
 }
 
-inline void gpio_write(gpio_t *obj, int value)
-{
-	if (value)
-        // *obj->reg_set = obj->mask;
-		// GPIO_WriteBit(Get_LedGpioPin(xLed), LED_OFF);
+inline void gpio_write(gpio_t *obj, int value){
+	if (value!=0){
 		GPIO_WriteBit(obj->GPIO_Pin, 1);
-    else
-        // *obj->reg_clr = obj->mask;
+	}
+    else{
     	GPIO_WriteBit(obj->GPIO_Pin, 0);
+    }
 }
 
 
 uint32_t gpio_set(PinName pin) {
 	MBED_ASSERT(pin != (PinName)NC);
-	/* pin_function(): pinmap.h:ARM */
+	// pin_function(): pinmap.h:ARM
 	//void pin_function(PinName pin, int function);
 	//pin_function(pin, STM_PIN_DATA(STM_MODE_INPUT, GPIO_NOPULL, 0));
 	//return (uint32_t)(1 << ((uint32_t)pin & 0xF)); // Return the pin mask
@@ -78,14 +97,19 @@ void gpio_init(gpio_t *obj, PinName pin) {
 	obj->GPIO_Mode = GPIO_Output;
 	obj->GPIO_Pull = ENABLE;
 	obj->GPIO_HighPwr = ENABLE;
-	// init
 	GPIO_Init(obj);
-	GPIO_WriteBit(getGpioPin(pin), LED_OFF);
+	obj->GPIO_Mode = GPIO_Output;
 }
 
 int gpio_read(gpio_t *obj){
-	return GPIO_ReadBit(obj->GPIO_Pin);
+	if (GPIO_ReadBit(obj->GPIO_Pin))
+	    return SET;
+	  else
+	    return RESET;
 }
+
+
+
 
 
 #ifdef stm

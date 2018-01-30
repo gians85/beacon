@@ -1,9 +1,6 @@
-BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\drivers\InterruptIn.o: \
- mbed-os\drivers\InterruptIn.cpp \
- BUILD\STEVAL_IDB007V1\GCC_ARM\mbed_config.h \
- mbed-os/drivers/InterruptIn.h mbed-os/platform/platform.h \
- mbed-os/platform/mbed_retarget.h mbed-os/platform/mbed_toolchain.h \
- mbed-os/platform/mbed_preprocessor.h \
+BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\targets\TARGET_STMBLUE\gpio_irq_api.o: \
+ mbed-os\targets\TARGET_STMBLUE\gpio_irq_api.c \
+ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed_config.h mbed-os/hal/gpio_irq_api.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/objects.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/device/cmsis.h \
@@ -26,9 +23,4 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\drivers\InterruptIn.o: \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_gpio.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_sysCtrl.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PinNames.h \
- mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_uart.h \
- mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PeripheralNames.h \
- mbed-os/hal/gpio_api.h mbed-os/hal/gpio_irq_api.h \
- mbed-os/platform/Callback.h mbed-os/platform/mbed_assert.h \
- mbed-os/platform/mbed_critical.h mbed-os/platform/NonCopyable.h \
- mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_debug.h
+ mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_uart.h

@@ -4,7 +4,7 @@
         "size": {
             ".data": 4, 
             ".bss": 9, 
-            ".text": 36
+            ".text": 34
         }
     }, 
     {
@@ -36,15 +36,15 @@
         "size": {
             ".data": 4, 
             ".bss": 108, 
-            ".text": 320
+            ".text": 352
         }
     }, 
     {
-        "module": "mbed-os\\drivers\\InterruptManager.o", 
+        "module": "mbed-os\\drivers\\InterruptIn.o", 
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 18
+            ".text": 58
         }
     }, 
     {
@@ -60,7 +60,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 581
+            ".text": 541
         }
     }, 
     {
@@ -76,7 +76,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 52
+            ".text": 96
         }
     }, 
     {
@@ -276,7 +276,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 102
+            ".text": 148
         }
     }, 
     {
@@ -306,7 +306,7 @@
     {
         "summary": {
             "static_ram": 3116, 
-            "total_flash": 48178
+            "total_flash": 48298
         }
     }
 ]

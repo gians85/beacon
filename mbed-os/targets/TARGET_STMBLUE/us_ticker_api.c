@@ -9,7 +9,7 @@
 #include "BlueNRG1_mft.h"
 #include "bluenrg_x_device.h"
 
-#include "serial_mylib.h"
+//#include "serial_mylib.h"
 
 
 uint32_t carry=0, b=0, c=0;

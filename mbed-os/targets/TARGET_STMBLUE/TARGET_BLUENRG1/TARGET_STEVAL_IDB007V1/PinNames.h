@@ -61,8 +61,8 @@ typedef enum {
 	DL2 = DIO7,
 	DL3 = DIO14,
 	// PUSH BUTTONS
-	PUSH1 = DIO5,
-	PUSH2 = DIO13,
+	PUSH1 = DIO13,
+	PUSH2 = DIO5,
 
 
 	// Arduino connector namings
@@ -119,8 +119,11 @@ typedef enum {
 
 typedef enum {
 	PullNone = 0,
-	PullEnable,
-	PullDefault = PullNone
+	PullEnable = 1,
+	PullDefault = PullNone,
+    PullUp = PullEnable,
+    PullDown = PullNone,
+	NoPull = PullNone
 } PinMode;
 
 typedef enum {

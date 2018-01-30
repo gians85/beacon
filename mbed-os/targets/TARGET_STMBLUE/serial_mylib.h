@@ -17,6 +17,8 @@ void myputs(const char *str) {
 		while (UART_GetFlagStatus(UART_FLAG_TXFF) == SET);
 		UART_SendData((uint16_t)*str ++);
 	}
+	UART_SendData((uint16_t) '\n');
+	UART_SendData((uint16_t) '\r');
 }
 void myputc(const char c) {
 		while (UART_GetFlagStatus(UART_FLAG_TXFF) == SET);
@@ -52,7 +54,6 @@ void printnumb(int n){
 	char s[20];
 	itoa(n, s);
 	myputs(s);
-	myputs("\n\r");
 }
 
 

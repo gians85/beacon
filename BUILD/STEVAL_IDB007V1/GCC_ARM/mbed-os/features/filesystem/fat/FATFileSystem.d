@@ -63,11 +63,13 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\features\filesystem\fat\FATFileSystem.o: \
  mbed-os/drivers/I2CSlave.h mbed-os/drivers/Ethernet.h \
  mbed-os/drivers/CAN.h mbed-os/drivers/RawSerial.h \
  mbed-os/drivers/SerialBase.h mbed-os/hal/serial_api.h \
- mbed-os/drivers/UARTSerial.h mbed-os/drivers/FlashIAP.h \
- mbed-os/drivers/Timer.h mbed-os/hal/ticker_api.h \
- mbed-os/platform/mbed_sleep.h mbed-os/hal/sleep_api.h \
- mbed-os/drivers/Ticker.h mbed-os/drivers/TimerEvent.h \
- mbed-os/hal/us_ticker_api.h mbed-os/platform/Callback.h \
+ mbed-os/drivers/UARTSerial.h mbed-os/platform/FileHandle.h \
+ mbed-os/drivers/InterruptIn.h mbed-os/hal/gpio_irq_api.h \
+ mbed-os/platform/Callback.h mbed-os/platform/CircularBuffer.h \
+ mbed-os/drivers/FlashIAP.h mbed-os/drivers/Timer.h \
+ mbed-os/hal/ticker_api.h mbed-os/platform/mbed_sleep.h \
+ mbed-os/hal/sleep_api.h mbed-os/drivers/Ticker.h \
+ mbed-os/drivers/TimerEvent.h mbed-os/hal/us_ticker_api.h \
  mbed-os/hal/lp_ticker_api.h mbed-os/drivers/Timeout.h \
  mbed-os/drivers/Ticker.h mbed-os/drivers/LowPowerTimeout.h \
  mbed-os/drivers/LowPowerTicker.h mbed-os/drivers/LowPowerTimer.h \
@@ -84,6 +86,6 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\features\filesystem\fat\FATFileSystem.o: \
  mbed-os/features/filesystem/fat/ChaN/ffconf.h \
  mbed-os/platform/mbed_debug.h mbed-os/platform/mbed_critical.h \
  mbed-os\features\filesystem\fat\FATFileSystem.h \
- mbed-os/features/filesystem/FileSystem.h mbed-os/platform/FileHandle.h \
+ mbed-os/features/filesystem/FileSystem.h \
  mbed-os/features/filesystem/fat/ChaN/ff.h \
  mbed-os/features/filesystem/fat/ChaN/ffconf.h

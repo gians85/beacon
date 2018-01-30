@@ -3533,6 +3533,6 @@
         "extra_labels_add": ["BLUENRG1"],
         "release_versions": ["5"],
         "device_name": "BLUENRG1",
-        "device_has": ["SERIAL"]
+        "device_has": ["SERIAL", "INTERRUPTIN"]
     }
 }

@@ -24,6 +24,12 @@ struct serial_s{
     PinName pin_rx;
 };
 
+struct gpio_irq_s {
+    IRQn_Type irq_n;
+    uint32_t irq_index;
+    uint32_t event;
+    PinName pin;
+};
 
 
 #ifdef stm
