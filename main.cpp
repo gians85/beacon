@@ -1,30 +1,27 @@
 #include "mbed.h"
+#include "BlueNRG1_gpio.h"
 
 //void mbed_die(void){};
 void mydelay(void);
+
+
 
 Serial pc(USBTX, USBRX);
 
 DigitalOut led1(LED1);
 DigitalOut led2(LED2);
+DigitalOut led3(LED3);
 DigitalIn but1(PUSH1);
 
-//InterruptIn button(PUSH1);
+void Rx_interrupt();
+void Tx_interrupt();
 
 int main() {
 	led2 = 1;
-	//button.rise(&flip);
 	pc.printf("Hello\n\r");
 	but1.mode(NoPull);
-
-	/* BUTTON_1 initialization
-	SdkEvalPushButtonInit(BUTTON_1);
-	SdkEvalPushButtonIrq(BUTTON_1, IRQ_ON_BOTH_EDGE);*/
-
-	/* BUTTON_2 initialization
-	SdkEvalPushButtonInit(BUTTON_2);
-	SdkEvalPushButtonIrq(BUTTON_2, IRQ_ON_RISING_EDGE); */
-
+	// Setup a serial interrupt function to receive data
+	pc.attach(&Rx_interrupt, Serial::RxIrq);
 	while(1){
 		while (!but1){
 			led1 = !led1;
@@ -32,6 +29,14 @@ int main() {
 		}
 	}
 }
+
+// Interupt Routine to read in data from serial port
+void Rx_interrupt() {
+	pc.putc(pc.getc());
+	return;
+}
+
+
 
 
 void mydelay(void){

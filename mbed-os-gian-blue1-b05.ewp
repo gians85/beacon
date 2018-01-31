@@ -270,12 +270,12 @@
           <state>-DTOOLCHAIN_object</state>
           <state>--guard_calls</state>
           <state>--preinclude=mbed_config.h</state>
+          <state>-DMBED_BUILD_TIMESTAMP=1517390312.11</state>
           <state>-DARM_MATH_CM0</state>
           <state>--diag_suppress=Pa050,Pa084,Pa093,Pa082</state>
           <state>-e</state>
           <state>-DTARGET_STMBLUE</state>
           <state>-DTARGET_BLUENRG1</state>
-          <state>-DMBED_BUILD_TIMESTAMP=1516821282.77</state>
           <state>-DTARGET_LIKE_CORTEX_M0</state>
           <state>-D__CORTEX_M0</state>
           <state>-r</state>
@@ -291,6 +291,7 @@
           <state>-DDEVICE_SERIAL=1</state>
           <state>-DMBED_DEBUG</state>
           <state>-DTARGET_CORTEX</state>
+          <state>-DDEVICE_INTERRUPTIN=1</state>
           <state>-D__CMSIS_RTOS</state>
           <state>-D__MBED_CMSIS_RTOS_CM</state>
           <state>-DTARGET_STEVAL_IDB007V1</state>
@@ -1582,6 +1583,9 @@
       <name>$PROJ_DIR$\mbed-os\hal\gpio_api.h</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\gpio_irq_api.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\mbed-os\hal\gpio_irq_api.h</name>
     </file>
     <file>
@@ -1843,16 +1847,13 @@
       <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\device\misc.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\device\misc_2.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\device\misc_2.h</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\mbed-os\cmsis\TARGET_CORTEX_M\mpu_armv7.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\mbed-os\cmsis\TARGET_CORTEX_M\mpu_armv8.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\mylib.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\mbed-os\features\mbedtls\inc\mbedtls\net.h</name>
@@ -1891,10 +1892,10 @@
       <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\TARGET_STEVAL_IDB007V1\PeripheralNames.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\pin_device.c</name>
+      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\pin_device.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\pin_device.h</name>
+      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\pin_device.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\pinmap.c</name>
@@ -2021,6 +2022,9 @@
     </file>
     <file>
       <name>$PROJ_DIR$\mbed-os\hal\serial_api.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\serial_device.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\serial_mylib.h</name>
@@ -2195,6 +2199,9 @@
     </file>
     <file>
       <name>$PROJ_DIR$\mbed-os\hal\us_ticker_api.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mbed-os\targets\TARGET_STMBLUE\TARGET_BLUENRG1\us_ticker_device.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\mbed-os\features\mbedtls\src\version.c</name>

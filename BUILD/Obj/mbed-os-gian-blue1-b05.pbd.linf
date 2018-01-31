@@ -63,6 +63,7 @@ C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\FileSystemHandle.p
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\FlashIAP.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\gcm.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\gpio_api.pbi
+C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\gpio_irq_api.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\havege.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\HeapBlockDevice.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\hmac_drbg.pbi
@@ -71,6 +72,7 @@ C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\I2CSlave.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\InterruptIn.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\InterruptManager.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\LocalFileSystem.pbi
+C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\main.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\mbed_alloc_wrappers.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\mbed_application.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\mbed_assert.pbi
@@ -105,7 +107,6 @@ C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\md5.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\md_wrap.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\memory_buffer_alloc.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\misc.pbi
-C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\misc_2.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\net_sockets.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\oid.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\padlock.pbi
@@ -160,4 +161,3 @@ C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\x509_csr.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\x509write_crt.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\x509write_csr.pbi
 C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\xtea.pbi
-C:\Users\Gianluca\mbedCLIdev\mbed-os-gian-blue1-b05\BUILD\Obj\main.pbi

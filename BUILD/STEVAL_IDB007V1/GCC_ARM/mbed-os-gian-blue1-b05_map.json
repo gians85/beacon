@@ -4,7 +4,7 @@
         "size": {
             ".data": 4, 
             ".bss": 9, 
-            ".text": 34
+            ".text": 36
         }
     }, 
     {
@@ -12,7 +12,7 @@
         "size": {
             ".data": 2472, 
             ".bss": 89, 
-            ".text": 29287
+            ".text": 29659
         }
     }, 
     {
@@ -35,16 +35,16 @@
         "module": "main.o", 
         "size": {
             ".data": 4, 
-            ".bss": 108, 
-            ".text": 352
+            ".bss": 116, 
+            ".text": 488
         }
     }, 
     {
-        "module": "mbed-os\\drivers\\InterruptIn.o", 
+        "module": "mbed-os\\drivers\\InterruptManager.o", 
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 58
+            ".text": 18
         }
     }, 
     {
@@ -60,7 +60,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 541
+            ".text": 581
         }
     }, 
     {
@@ -132,7 +132,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 614
+            ".text": 690
         }
     }, 
     {
@@ -180,7 +180,7 @@
         "size": {
             ".data": 4, 
             ".bss": 272, 
-            ".text": 1117
+            ".text": 1125
         }
     }, 
     {
@@ -252,7 +252,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 436
+            ".text": 492
         }
     }, 
     {
@@ -291,8 +291,8 @@
         "module": "mbed-os\\targets\\TARGET_STMBLUE\\serial_api.o", 
         "size": {
             ".data": 0, 
-            ".bss": 20, 
-            ".text": 166
+            ".bss": 28, 
+            ".text": 268
         }
     }, 
     {
@@ -305,8 +305,8 @@
     }, 
     {
         "summary": {
-            "static_ram": 3116, 
-            "total_flash": 48298
+            "static_ram": 3132, 
+            "total_flash": 49050
         }
     }
 ]

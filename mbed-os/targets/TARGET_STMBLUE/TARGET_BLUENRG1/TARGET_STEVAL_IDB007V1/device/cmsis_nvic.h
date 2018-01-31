@@ -24,6 +24,7 @@ extern "C" {
 
 //void NVIC_SetVector(IRQn_Type IRQn, uint32_t vector);
 //uint32_t NVIC_GetVector(IRQn_Type IRQn);
+
 #include "misc.h"
 
 #ifdef __cplusplus

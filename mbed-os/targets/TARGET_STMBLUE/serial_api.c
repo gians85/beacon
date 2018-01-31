@@ -8,6 +8,7 @@
 
 int stdio_uart_inited = 0;
 serial_t stdio_uart;
+static uart_irq_handler irq_handler;
 
 
 void serial_init(serial_t *obj, PinName tx, PinName rx){
@@ -50,6 +51,8 @@ void serial_init(serial_t *obj, PinName tx, PinName rx){
 	UART_InitStructure.UART_FifoEnable = ENABLE;
 	UART_Init(&UART_InitStructure);
 
+	obj->uart = UART_1;
+
 	obj->init = &UART_InitStructure;
 
 	/* Interrupt as soon as data is received. */
@@ -79,13 +82,38 @@ void serial_baud(serial_t *obj, int baudrate){
 	obj->init->UART_BaudRate = baudrate;
 }
 
-void serial_irq_handler(serial_t *obj, uart_irq_handler handler, uint32_t id){
+/*void serial_irq_handler(serial_t *obj, uart_irq_handler handler, uint32_t id){
+}*/
 
+/*void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable){
+}*/
+static uint32_t serial_irq_ids = 0;
+
+void serial_irq_handler(serial_t *obj, uart_irq_handler handler, uint32_t id){
+    irq_handler = handler;
+    serial_irq_ids = id;
 }
 
 void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable){
-
+	/* NVIC configuration */
+	NVIC_InitType NVIC_InitStructure;
+	/* Enable the UART Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = UART_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = LOW_PRIORITY;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = enable;
+	NVIC_Init(&NVIC_InitStructure);
+	//UART_ITConfig(UART_IT_RX, enable);
+	if (irq == RxIrq)
+		UART_ITConfig(UART_IT_RX, enable);
+	else// TxIrq
+		UART_ITConfig(UART_IT_TX, enable);
 }
 
+void UART_IRQHandler(void){
+	if (UART_GetITStatus(UART_IT_RX) != RESET){
+		UART_ClearITPendingBit(UART_IT_RX);
+		irq_handler(serial_irq_ids, RxIrq);
+	}
+}
 
 #endif //DEVICE_SERIAL
