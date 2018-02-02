@@ -25,6 +25,7 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\drivers\Ticker.o: \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_sysCtrl.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PinNames.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_uart.h \
+ mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_spi.h \
  mbed-os/hal/us_ticker_api.h mbed-os/platform/NonCopyable.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_preprocessor.h \
  mbed-os/platform/mbed_debug.h mbed-os/platform/Callback.h \

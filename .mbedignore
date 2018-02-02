@@ -10,3 +10,4 @@ mbed-os/features/netsocket/*
 mbed-os/features/storage/*
 mbed-os/events/*
 mbed-os/rtos/*
+

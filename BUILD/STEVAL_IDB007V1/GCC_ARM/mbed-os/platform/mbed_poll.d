@@ -28,6 +28,7 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\platform\mbed_poll.o: \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_sysCtrl.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PinNames.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_uart.h \
+ mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_spi.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PeripheralNames.h \
  mbed-os/platform/NonCopyable.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_debug.h mbed-os/drivers/Timer.h \

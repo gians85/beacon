@@ -2969,7 +2969,7 @@ typedef struct {                                    /*!< PKA Structure          
 #define FLASH                           ((FLASH_Type              *) FLASH_BASE)
 #define SYSTEM_CTRL                     ((SYSTEM_CTRL_Type        *) SYSTEM_CTRL_BASE)
 #define UART                            ((UART_Type               *) UART_BASE)
-#define SPI                             ((SPI_Type                *) SPI_BASE)
+#define SPI1                            ((SPI_Type                *) SPI_BASE)
 #define WDG                             ((WDG_Type                *) WDG_BASE)
 #define ADC                             ((ADC_Type                *) ADC_BASE)
 #define CKGEN_SOC                       ((CKGEN_SOC_Type          *) CKGEN_SOC_BASE)

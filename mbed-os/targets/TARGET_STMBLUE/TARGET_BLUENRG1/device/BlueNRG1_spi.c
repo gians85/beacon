@@ -111,8 +111,8 @@ void SPI_SetBaudrate(uint32_t Baudrate)
     scr = c - 1;    
   }
   /* set dividers */
-  SPI->CPSR = cpsr;
-  SPI->CR0_b.SCR = scr;    
+  SPI1->CPSR = cpsr;
+  SPI1->CR0_b.SCR = scr;
 }
 
 /**
@@ -131,15 +131,15 @@ void SPI_SetBaudrate(uint32_t Baudrate)
 */
 void SPI_DeInit(void)
 {
-  SPI->CR0   = 0x1C000000;
-  SPI->CR1   = 0x00000000;
-  SPI->CPSR  = 0x00000000;
-  SPI->IMSC  = 0x00000000;
-  SPI->ICR   = 0x00000000;
-  SPI->DMACR = 0x00000000;
-  SPI->RXFRM = 0x00000000;
-  SPI->CHN   = 0x00000000;
-  SPI->WDTXF = 0x00000000;
+  SPI1->CR0   = 0x1C000000;
+  SPI1->CR1   = 0x00000000;
+  SPI1->CPSR  = 0x00000000;
+  SPI1->IMSC  = 0x00000000;
+  SPI1->ICR   = 0x00000000;
+  SPI1->DMACR = 0x00000000;
+  SPI1->RXFRM = 0x00000000;
+  SPI1->CHN   = 0x00000000;
+  SPI1->WDTXF = 0x00000000;
 }
 
 /**
@@ -161,16 +161,16 @@ void SPI_Init(SPI_InitType* SPI_InitStruct)
   SPI_SetBaudrate(SPI_InitStruct->SPI_BaudRate);
   
   /* Set SPI mode */
-  SPI->CR1_b.MS = SPI_InitStruct->SPI_Mode;
+  SPI1->CR1_b.MS = SPI_InitStruct->SPI_Mode;
   
   /* Set CPOL */
-  SPI->CR0_b.SPO = SPI_InitStruct->SPI_CPOL;
+  SPI1->CR0_b.SPO = SPI_InitStruct->SPI_CPOL;
   
   /* Set CPHA */
-  SPI->CR0_b.SPH = SPI_InitStruct->SPI_CPHA;
+  SPI1->CR0_b.SPH = SPI_InitStruct->SPI_CPHA;
   
   /* Set datasize */
-  SPI->CR0_b.DSS = SPI_InitStruct->SPI_DataSize;
+  SPI1->CR0_b.DSS = SPI_InitStruct->SPI_DataSize;
 }
 
 
@@ -210,11 +210,11 @@ void SPI_Cmd(FunctionalState NewState)
   
   if (NewState != DISABLE) {
     /* Enable the selected SPI peripheral */
-    SPI->CR1_b.SSE = SET;
+    SPI1->CR1_b.SSE = SET;
   }
   else {
     /* Disable the selected SPI peripheral */
-    SPI->CR1_b.SSE = RESET;
+    SPI1->CR1_b.SSE = RESET;
   }
 }
 
@@ -240,11 +240,11 @@ void SPI_ITConfig(uint8_t SPI_IT, FunctionalState NewState)
   
   if (NewState != DISABLE) {
     /* Enable the selected SPI interrupts */
-    SET_BIT(SPI->IMSC, SPI_IT);
+    SET_BIT(SPI1->IMSC, SPI_IT);
   }
   else {
     /* Disable the selected SPI interrupts */
-    CLEAR_BIT(SPI->IMSC, SPI_IT);
+    CLEAR_BIT(SPI1->IMSC, SPI_IT);
   }
 }
 
@@ -262,11 +262,11 @@ void SPI_SlaveModeOutputCmd(FunctionalState NewState)
   
   if (NewState != DISABLE) {
     /* Enable the output */
-    SPI->CR1_b.SOD = RESET;
+    SPI1->CR1_b.SOD = RESET;
   }
   else {
     /* Disable the output */
-    SPI->CR1_b.SOD = SET;
+    SPI1->CR1_b.SOD = SET;
   }
 }
 
@@ -278,7 +278,7 @@ void SPI_SlaveModeOutputCmd(FunctionalState NewState)
 void SPI_SendData(uint32_t Data)
 {
   /* Write in the DR register the data to be sent */
-  SPI->DR = Data;
+  SPI1->DR = Data;
 }
 
 /**
@@ -289,7 +289,7 @@ void SPI_SendData(uint32_t Data)
 uint32_t SPI_ReceiveData(void)
 {
   /* Return the data in the DR register */
-  return SPI->DR;
+  return SPI1->DR;
 }
 
 /**
@@ -308,7 +308,7 @@ void SPI_DataSizeConfig(uint16_t SPI_DataSize)
   assert_param(IS_SPI_DATASIZE(SPI_DataSize));
   
   /* set the datasize */  
-  SPI->CR0_b.DSS = SPI_DataSize;
+  SPI1->CR0_b.DSS = SPI_DataSize;
 }
 
 /**
@@ -327,7 +327,7 @@ void SPI_CommandSizeConfig(uint16_t SPI_DataSize)
   assert_param(IS_SPI_DATASIZE(SPI_DataSize));
   
   /* set the datasize */  
-  SPI->CR0_b.CSS = SPI_DataSize;
+  SPI1->CR0_b.CSS = SPI_DataSize;
 }
 
 /**
@@ -343,11 +343,11 @@ void SPI_EnableWaitState(FunctionalState NewState)
   
   if (NewState != DISABLE) {
     /* Enable the wait state  */
-    SPI->CR1_b.MSPIWAIT = RESET;
+    SPI1->CR1_b.MSPIWAIT = RESET;
   }
   else {
     /* Disable the wait state  */
-    SPI->CR1_b.MSPIWAIT = SET;
+    SPI1->CR1_b.MSPIWAIT = SET;
   }
 }
 
@@ -366,7 +366,7 @@ void SPI_FrameFormatConfig(uint8_t SPI_FrameFormat)
   assert_param(IS_SPI_FRMFRMT(SPI_FrameFormat));
   
   /* set the datasize */  
-  SPI->CR0_b.FRF = SPI_FrameFormat;
+  SPI1->CR0_b.FRF = SPI_FrameFormat;
 }
 
 
@@ -389,7 +389,7 @@ FlagStatus SPI_GetFlagStatus(uint16_t SPI_FLAG)
   assert_param(IS_SPI_GET_FLAG(SPI_FLAG));
   
   /* Check the status of the specified SPI flag */
-  if (READ_BIT(SPI->SR, SPI_FLAG) != (uint16_t)RESET) {
+  if (READ_BIT(SPI1->SR, SPI_FLAG) != (uint16_t)RESET) {
     /* SPI_FLAG is set */
     return SET;
   }
@@ -419,7 +419,7 @@ ITStatus SPI_GetITStatus(uint8_t SPI_IT)
   assert_param(IS_SPI_GET_IT(SPI_IT));
   
   /* Check the status of the specified SPI interrupt */
-  if (READ_BIT(SPI->RIS, SPI_IT) != (uint16_t)RESET) {
+  if (READ_BIT(SPI1->RIS, SPI_IT) != (uint16_t)RESET) {
     /* SPI_IT is set */
     return SET;
   }
@@ -448,7 +448,7 @@ void SPI_ClearITPendingBit(uint8_t SPI_IT)
   assert_param(IS_SPI_CLEAR_IT(SPI_IT));
   
   /* Clear the selected SPI interrupt pending bit */
-  CLEAR_BIT(SPI->ICR, SPI_IT);
+  CLEAR_BIT(SPI1->ICR, SPI_IT);
 }
 
 /**
@@ -476,15 +476,15 @@ void SPI_ClearTXFIFO(void)
   uint32_t tmp;
 
   /* Enable read from the TX FIFO */
-  SPI->ITCR_b.SWAPFIFO = SET;
+  SPI1->ITCR_b.SWAPFIFO = SET;
   
   /* Flush the data from the TX FIFO till it is not empty. */
-  while(0 == SPI->SR_b.TFE) {
-    tmp |= SPI->TDR;
+  while(0 == SPI1->SR_b.TFE) {
+    tmp |= SPI1->TDR;
   }
   
   /* Disable the read from the TX FIFO */
-  SPI->ITCR_b.SWAPFIFO = RESET;
+  SPI1->ITCR_b.SWAPFIFO = RESET;
 
 }
 
@@ -504,7 +504,7 @@ void SPI_SetMasterCommunicationMode(uint32_t Mode)
   assert_param(IS_SPI_COM_MODE(Mode));
   
   /* Set the communication mode */
-  SPI->CR0_b.SPIM = Mode;
+  SPI1->CR0_b.SPIM = Mode;
 }
 
 /**
@@ -515,7 +515,7 @@ void SPI_SetMasterCommunicationMode(uint32_t Mode)
 void SPI_SetDummyCharacter(uint32_t NullCharacter)
 {
   /* Set the dummy character */
-  SPI->CHN = NullCharacter;
+  SPI1->CHN = NullCharacter;
 }
 
 /**
@@ -526,7 +526,7 @@ void SPI_SetDummyCharacter(uint32_t NullCharacter)
 void SPI_SetNumFramesToReceive(uint16_t Number)
 {
   /* Set the number of frames to receive */
-  SPI->RXFRM = Number;
+  SPI1->RXFRM = Number;
 }
 
 /**
@@ -537,7 +537,7 @@ void SPI_SetNumFramesToReceive(uint16_t Number)
 void SPI_SetNumFramesToTransmit(uint16_t Number)
 {
   /* Set the number of frames to transmit */
-  SPI->WDTXF = Number;
+  SPI1->WDTXF = Number;
 }
 
 
@@ -554,11 +554,11 @@ void SPI_SlaveSwSelection(FunctionalState NewState)
   
   if (NewState != DISABLE) {
     /* Enable the output */
-    SPI->CR0_b.CS1 = RESET;
+    SPI1->CR0_b.CS1 = RESET;
   }
   else {
     /* Disable the output */
-    SPI->CR0_b.CS1 = SET;
+    SPI1->CR0_b.CS1 = SET;
   }
 }
 
@@ -572,7 +572,7 @@ void SPI_EndianFormatReception(uint8_t Endian)
   /* Check the parameters */
   assert_param(IS_SPI_ENDIAN(Endian));
   
-  SPI->CR1_b.RENDN = Endian;
+  SPI1->CR1_b.RENDN = Endian;
 }
 
 /**
@@ -585,7 +585,7 @@ void SPI_EndianFormatTransmission(uint8_t Endian)
   /* Check the parameters */
   assert_param(IS_SPI_ENDIAN(Endian));
   
-  SPI->CR1_b.TENDN = Endian;
+  SPI1->CR1_b.TENDN = Endian;
 }
 
 
@@ -605,7 +605,7 @@ void SPI_DelayBetweenFrames(uint8_t Delay)
   /* Check the parameters */
   assert_param(IS_SPI_ENDIAN(Delay));
   
-  SPI->CR1_b.MSPIWAIT = Delay;
+  SPI1->CR1_b.MSPIWAIT = Delay;
 }
 
 
@@ -622,11 +622,11 @@ void SPI_DelayDataInput(FunctionalState NewState)
   
   if (NewState != DISABLE) {
     /* Enable the output */
-    SPI->CR1_b.DATAINDEL = RESET;
+    SPI1->CR1_b.DATAINDEL = RESET;
   }
   else {
     /* Disable the output */
-    SPI->CR1_b.DATAINDEL = SET;
+    SPI1->CR1_b.DATAINDEL = SET;
   }
 }
 
@@ -645,7 +645,7 @@ void SPI_TxFifoInterruptLevelConfig(uint8_t SPI_TX_FIFO_LEV)
     /* Check the parameters */
   assert_param(IS_SPI_FIFO_LEV(SPI_TX_FIFO_LEV));
 
-  SPI->CR1_b.TXIFLSEL = SPI_TX_FIFO_LEV;
+  SPI1->CR1_b.TXIFLSEL = SPI_TX_FIFO_LEV;
 }
 
 /**
@@ -663,7 +663,7 @@ void SPI_RxFifoInterruptLevelConfig(uint8_t SPI_RX_FIFO_LEV)
     /* Check the parameters */
   assert_param(IS_SPI_FIFO_LEV(SPI_RX_FIFO_LEV));
 
-  SPI->CR1_b.RXIFLSEL = SPI_RX_FIFO_LEV;
+  SPI1->CR1_b.RXIFLSEL = SPI_RX_FIFO_LEV;
 }
 
 /**
@@ -685,12 +685,12 @@ void SPI_DMACmd(uint8_t SPI_DMAReq, FunctionalState NewState)
   if (NewState != DISABLE)
   {
     /* Enable the DMA transfer */
-    SPI->DMACR |= SPI_DMAReq;
+    SPI1->DMACR |= SPI_DMAReq;
   }
   else
   {
     /* Disable the DMA transfer */
-    SPI->DMACR &= (uint8_t)~SPI_DMAReq;
+    SPI1->DMACR &= (uint8_t)~SPI_DMAReq;
   }
 }
 

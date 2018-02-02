@@ -25,11 +25,46 @@ LeaveTargetRunning=_ 0
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
 [DebugChecksum]
-Checksum=-2018465872
+Checksum=1914890027
 [CallStack]
 ShowArgs=0
 [Disassembly]
 MixedMode=1
+[CodeCoverage]
+Enabled=_ 0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=0
+TypeViol=1
+Stop=0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=16000000
+MultiCoreRunAll=1
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -44,8 +79,7 @@ ShowTiming=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 0 "EMUL_CODE" "0x10044DA2" 0 0 1 "" 0 "" 0
-Count=1
+Count=0
 [Aliases]
 Count=0
 SuppressDialog=0

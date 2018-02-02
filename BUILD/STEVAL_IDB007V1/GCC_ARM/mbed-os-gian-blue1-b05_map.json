@@ -4,7 +4,7 @@
         "size": {
             ".data": 4, 
             ".bss": 9, 
-            ".text": 36
+            ".text": 37
         }
     }, 
     {
@@ -35,16 +35,16 @@
         "module": "main.o", 
         "size": {
             ".data": 4, 
-            ".bss": 116, 
-            ".text": 488
+            ".bss": 152, 
+            ".text": 673
         }
     }, 
     {
-        "module": "mbed-os\\drivers\\InterruptManager.o", 
+        "module": "mbed-os\\drivers\\SPI.o", 
         "size": {
             ".data": 0, 
-            ".bss": 0, 
-            ".text": 18
+            ".bss": 12, 
+            ".text": 418
         }
     }, 
     {
@@ -220,7 +220,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 204
+            ".text": 232
         }
     }, 
     {
@@ -237,6 +237,14 @@
             ".data": 0, 
             ".bss": 0, 
             ".text": 226
+        }
+    }, 
+    {
+        "module": "mbed-os\\targets\\TARGET_STMBLUE\\TARGET_BLUENRG1\\device\\BlueNRG1_spi.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 368
         }
     }, 
     {
@@ -292,7 +300,15 @@
         "size": {
             ".data": 0, 
             ".bss": 28, 
-            ".text": 268
+            ".text": 302
+        }
+    }, 
+    {
+        "module": "mbed-os\\targets\\TARGET_STMBLUE\\spi_api.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 382
         }
     }, 
     {
@@ -305,8 +321,8 @@
     }, 
     {
         "summary": {
-            "static_ram": 3132, 
-            "total_flash": 49050
+            "static_ram": 3180, 
+            "total_flash": 50448
         }
     }
 ]

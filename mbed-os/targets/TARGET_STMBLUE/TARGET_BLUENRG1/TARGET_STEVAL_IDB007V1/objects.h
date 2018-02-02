@@ -9,6 +9,7 @@
 #include "PinNames.h"
 #include "pin_device.h"
 #include "BlueNRG1_uart.h"
+#include "BlueNRG1_spi.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -18,8 +19,8 @@ extern "C" {
 
 struct serial_s{
     UARTName uart;
-    int index; // Used by irq
-    UART_InitType *init;
+    uint32_t index_irq; // Used by irq
+    UART_InitType *init;  //bluenrg struct
     PinName pin_tx;
     PinName pin_rx;
 };
@@ -30,6 +31,15 @@ struct gpio_irq_s {
     uint32_t event;
     PinName pin;
 };
+
+struct spi_s{
+	SPI_InitType *init;
+    PinName pin_miso;
+    PinName pin_mosi;
+    PinName pin_sclk;
+    PinName pin_ssel;
+};
+
 
 
 #ifdef stm

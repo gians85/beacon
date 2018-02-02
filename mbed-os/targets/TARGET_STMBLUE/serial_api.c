@@ -92,6 +92,7 @@ static uint32_t serial_irq_ids = 0;
 void serial_irq_handler(serial_t *obj, uart_irq_handler handler, uint32_t id){
     irq_handler = handler;
     serial_irq_ids = id;
+    obj->index_irq = id;
 }
 
 void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable){
@@ -106,7 +107,7 @@ void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable){
 	if (irq == RxIrq)
 		UART_ITConfig(UART_IT_RX, enable);
 	else// TxIrq
-		UART_ITConfig(UART_IT_TX, enable);
+		UART_ITConfig(UART_IT_TXFE, enable);
 }
 
 void UART_IRQHandler(void){
@@ -114,6 +115,10 @@ void UART_IRQHandler(void){
 		UART_ClearITPendingBit(UART_IT_RX);
 		irq_handler(serial_irq_ids, RxIrq);
 	}
+    if (UART_GetITStatus(UART_IT_TXFE) != RESET){
+        UART_ClearITPendingBit(UART_IT_TXFE);
+        irq_handler(serial_irq_ids, TxIrq);
+    }
 }
 
 #endif //DEVICE_SERIAL
