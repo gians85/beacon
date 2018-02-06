@@ -33,11 +33,12 @@ struct gpio_irq_s {
 };
 
 struct spi_s{
-	SPI_InitType *init;
+	SPI_InitType init;
     PinName pin_miso;
     PinName pin_mosi;
     PinName pin_sclk;
     PinName pin_ssel;
+    char dummy_char;
 };
 
 

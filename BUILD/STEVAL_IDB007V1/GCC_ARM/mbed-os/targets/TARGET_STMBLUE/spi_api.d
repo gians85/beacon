@@ -27,4 +27,6 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\targets\TARGET_STMBLUE\spi_api.o: \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/TARGET_STEVAL_IDB007V1/PinNames.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_uart.h \
  mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_spi.h \
- mbed-os/hal/dma_api.h mbed-os/hal/buffer.h mbed-os/hal/pinmap.h
+ mbed-os/hal/dma_api.h mbed-os/hal/buffer.h mbed-os/hal/pinmap.h \
+ mbed-os\targets\TARGET_STMBLUE\serial_mylib.h \
+ mbed-os/targets/TARGET_STMBLUE/TARGET_BLUENRG1/device/BlueNRG1_UART.h

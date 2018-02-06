@@ -3,8 +3,8 @@
         "module": "[fill]", 
         "size": {
             ".data": 4, 
-            ".bss": 9, 
-            ".text": 37
+            ".bss": 15, 
+            ".text": 44
         }
     }, 
     {
@@ -12,7 +12,7 @@
         "size": {
             ".data": 2472, 
             ".bss": 89, 
-            ".text": 29659
+            ".text": 29455
         }
     }, 
     {
@@ -20,7 +20,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 8632
+            ".text": 9616
         }
     }, 
     {
@@ -35,8 +35,16 @@
         "module": "main.o", 
         "size": {
             ".data": 4, 
-            ".bss": 152, 
-            ".text": 673
+            ".bss": 170, 
+            ".text": 1502
+        }
+    }, 
+    {
+        "module": "mbed-os\\drivers\\InterruptManager.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 18
         }
     }, 
     {
@@ -44,7 +52,7 @@
         "size": {
             ".data": 0, 
             ".bss": 12, 
-            ".text": 418
+            ".text": 480
         }
     }, 
     {
@@ -132,7 +140,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 690
+            ".text": 650
         }
     }, 
     {
@@ -244,7 +252,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 368
+            ".text": 344
         }
     }, 
     {
@@ -308,7 +316,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 382
+            ".text": 510
         }
     }, 
     {
@@ -321,8 +329,8 @@
     }, 
     {
         "summary": {
-            "static_ram": 3180, 
-            "total_flash": 50448
+            "static_ram": 3204, 
+            "total_flash": 52208
         }
     }
 ]
