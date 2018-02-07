@@ -29,5 +29,8 @@
 #define OUT_Z_L_G   0x26
 #define OUT_Z_H_G   0x27
 
+#define OUT_TEMP_L  0x20
+#define OUT_TEMP_H  0x21
+
 
 #endif /* IMU_IMU_H_ */

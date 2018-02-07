@@ -3,8 +3,8 @@
         "module": "[fill]", 
         "size": {
             ".data": 4, 
-            ".bss": 15, 
-            ".text": 44
+            ".bss": 22, 
+            ".text": 70
         }
     }, 
     {
@@ -12,7 +12,7 @@
         "size": {
             ".data": 2472, 
             ".bss": 89, 
-            ".text": 29455
+            ".text": 29453
         }
     }, 
     {
@@ -20,7 +20,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 9616
+            ".text": 9636
         }
     }, 
     {
@@ -35,8 +35,8 @@
         "module": "main.o", 
         "size": {
             ".data": 4, 
-            ".bss": 170, 
-            ".text": 1502
+            ".bss": 202, 
+            ".text": 1671
         }
     }, 
     {
@@ -51,8 +51,8 @@
         "module": "mbed-os\\drivers\\SPI.o", 
         "size": {
             ".data": 0, 
-            ".bss": 12, 
-            ".text": 480
+            ".bss": 44, 
+            ".text": 556
         }
     }, 
     {
@@ -60,7 +60,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 312
+            ".text": 342
         }
     }, 
     {
@@ -69,14 +69,6 @@
             ".data": 0, 
             ".bss": 0, 
             ".text": 581
-        }
-    }, 
-    {
-        "module": "mbed-os\\features\\filesystem\\fat\\FATFileSystem.o", 
-        "size": {
-            ".data": 0, 
-            ".bss": 0, 
-            ".text": 98
         }
     }, 
     {
@@ -115,8 +107,8 @@
         "module": "mbed-os\\platform\\FileBase.o", 
         "size": {
             ".data": 0, 
-            ".bss": 12, 
-            ".text": 262
+            ".bss": 44, 
+            ".text": 298
         }
     }, 
     {
@@ -187,24 +179,168 @@
         "module": "mbed-os\\platform\\mbed_retarget.o", 
         "size": {
             ".data": 4, 
-            ".bss": 272, 
-            ".text": 1125
+            ".bss": 304, 
+            ".text": 1149
         }
     }, 
     {
-        "module": "mbed-os\\platform\\mbed_sdk_boot.o", 
+        "module": "mbed-os\\platform\\mbed_wait_api_rtos.o", 
         "size": {
             ".data": 0, 
             ".bss": 0, 
+            ".text": 82
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\Mutex.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 206
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\mbed_boot.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 4360, 
+            ".text": 429
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\mbed_rtx_handlers.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 661
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\mbed_rtx_idle.o", 
+        "size": {
+            ".data": 4, 
+            ".bss": 0, 
+            ".text": 36
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\TOOLCHAIN_GCC\\TARGET_M0\\irq_cm0.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 152
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rt_OsEventObserver.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 4, 
+            ".text": 0
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_delay.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 68
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_evr.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 112
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_kernel.o", 
+        "size": {
+            ".data": 164, 
+            ".bss": 0, 
+            ".text": 875
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_lib.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 1620, 
+            ".text": 260
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_memory.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 254
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_mempool.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 232
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_msgqueue.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 1732
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_mutex.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 1128
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_system.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 376
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_thread.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 2060
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\RTX\\Source\\rtx_timer.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 228
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\TARGET_CORTEX\\rtx5\\Source\\os_systick.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 1, 
+            ".text": 142
+        }
+    }, 
+    {
+        "module": "mbed-os\\rtos\\Thread.o", 
+        "size": {
+            ".data": 0, 
+            ".bss": 4, 
             ".text": 28
-        }
-    }, 
-    {
-        "module": "mbed-os\\platform\\mbed_wait_api_no_rtos.o", 
-        "size": {
-            ".data": 0, 
-            ".bss": 0, 
-            ".text": 44
         }
     }, 
     {
@@ -329,8 +465,8 @@
     }, 
     {
         "summary": {
-            "static_ram": 3204, 
-            "total_flash": 52208
+            "static_ram": 9496, 
+            "total_flash": 61646
         }
     }
 ]

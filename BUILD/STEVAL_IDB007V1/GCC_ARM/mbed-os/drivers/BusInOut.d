@@ -31,4 +31,19 @@ BUILD\STEVAL_IDB007V1\GCC_ARM\mbed-os\drivers\BusInOut.o: \
  mbed-os/hal/gpio_api.h mbed-os/platform/mbed_critical.h \
  mbed-os/platform/PlatformMutex.h mbed-os/platform/NonCopyable.h \
  mbed-os/platform/mbed_toolchain.h mbed-os/platform/mbed_debug.h \
+ mbed-os/rtos/Mutex.h mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
+ mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
+ mbed-os/rtos/TARGET_CORTEX/mbed_rtos_storage.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_lib.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_c.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_cm.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/Include/os_tick.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_evr.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/RTX_Config.h \
+ mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
+ mbed-os/targets/TARGET_STMBLUE/mbed_rtx.h \
+ mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
  mbed-os/platform/mbed_assert.h
