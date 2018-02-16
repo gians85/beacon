@@ -110,7 +110,7 @@ void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable){
 		UART_ITConfig(UART_IT_TXFE, enable);
 }
 
-void UART_IRQHandler(void){
+void UART_Handler(void){
 	if (UART_GetITStatus(UART_IT_RX) != RESET){
 		UART_ClearITPendingBit(UART_IT_RX);
 		irq_handler(serial_irq_ids, RxIrq);

@@ -58,7 +58,7 @@ __vector_table
         DCD     0                              ; Reserved
         DCD     UART_IRQHandler                ; Reserved
         DCD     SPI_IRQHandler                 ; Reserved
-        DCD     BLE_IRQHandler                 ; Reserved
+        DCD     Blue_Handler                   ; Reserved
         DCD     WDG_IRQHandler                 ; Reserved
         DCD     0                              ; Reserved
         DCD     0                              ; Reserved
@@ -74,8 +74,8 @@ __vector_table
         DCD     MFT2A_IRQHandler               ; Reserved
         DCD     MFT2B_IRQHandler               ; Reserved
         DCD     RTC_IRQHandler                 ; Reserved
-        DCD     PKA_IRQHandler                 ; Reserved
-        DCD     DMA_IRQHandler                 ; Reserved
+        DCD     PKA_Handler                 ; Reserved
+        DCD     DMA_Handler                 ; Reserved
         DCD     0                              ; Reserved
         DCD     0                              ; Reserved
         DCD     0                              ; Reserved
@@ -145,10 +145,10 @@ UART_IRQHandler
 SPI_IRQHandler
         B SPI_IRQHandler
 
-        PUBWEAK BLE_IRQHandler
+        PUBWEAK Blue_Handler
         SECTION .text:CODE:NOROOT:REORDER(1)
-BLE_IRQHandler
-        B BLE_IRQHandler
+Blue_Handler
+        B Blue_Handler
 
         PUBWEAK WDG_IRQHandler
         SECTION .text:CODE:NOROOT:REORDER(1)
@@ -195,15 +195,15 @@ MFT2B_IRQHandler
 RTC_IRQHandler
         B RTC_IRQHandler
 
-        PUBWEAK PKA_IRQHandler
+        PUBWEAK PKA_Handler
         SECTION .text:CODE:NOROOT:REORDER(1)
-PKA_IRQHandler
-        B PKA_IRQHandler
+PKA_Handler
+        B PKA_Handler
 
-        PUBWEAK DMA_IRQHandler
+        PUBWEAK DMA_Handler
         SECTION .text:CODE:NOROOT:REORDER(1)
-DMA_IRQHandler
-        B DMA_IRQHandler
+DMA_Handler
+        B DMA_Handler
 
         END
 ;*****************************END OF FILE*****

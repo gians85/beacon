@@ -12,7 +12,7 @@
 * CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING
 * INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
 *******************************************************************************/
-#ifdef ccc
+//#ifdef ccc
 
 #ifndef __COMPILER_H__
 #define __COMPILER_H__
@@ -29,7 +29,7 @@
 /** @addtogroup IAR_toolchain_macros    IAR toolchain macros
   * @{
   */
-
+//#ifdef ddd
 /**
   * @brief  This is the section dedicated to IAR toolchain
   */
@@ -41,8 +41,9 @@
   *         Usage:  PACKED(struct) myStruct_s
   *                 PACKED(union) myStruct_s
   */
+#ifdef sdk
 #define PACKED(decl)                   __packed decl
-    
+#endif
 /**
   * @brief  REQUIRED
   *         Use the REQUIRED macro for variables that must be always included.
@@ -85,7 +86,9 @@
   *         Use the WEAK_FUNCTION macro to declare a weak function.
   *         Usage:  WEAK_FUNCTION(int my_weak_function(void))
   */
+#ifdef sdk
 #define WEAK_FUNCTION(function)        __weak function
+#endif
 
 /**
   * @brief  NO_INIT
@@ -120,6 +123,8 @@
 extern void __iar_program_start(void);
 #define RESET_HANDLER                  __iar_program_start
 
+
+//#endif //ddd
 /**
  * @}
  */
@@ -170,8 +175,9 @@ extern void __iar_program_start(void);
   *         Use the WEAK_FUNCTION macro to declare a weak function.
   *         Usage:  WEAK_FUNCTION(int my_weak_function(void))
   */
+#ifdef sdk
 #define WEAK_FUNCTION(function)         __attribute__((weak)) function 
-
+#endif
 /**
   * @brief  NORETURN_FUNCTION
   *         Use the NORETURN_FUNCTION macro to declare a no return function.
@@ -336,4 +342,4 @@ extern unsigned int Image$$ARM_LIB_STACKHEAP$$ZI$$Limit;
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 #endif /* __COMPILER_H__ */
 
-#endif /* ccc */
+//#endif /* ccc */

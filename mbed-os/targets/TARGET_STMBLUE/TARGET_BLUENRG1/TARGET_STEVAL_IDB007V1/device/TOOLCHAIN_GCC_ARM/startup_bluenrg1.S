@@ -116,8 +116,8 @@ g_pfnVectors:
   .word  Reset_Handler
   .word  NMI_Handler
   .word  HardFault_Handler
-  .word  0
-  .word  0
+  .word  0xAA5555AA
+  .word  0x424C5545
   .word  0
   .word  0
   .word  0
@@ -128,30 +128,30 @@ g_pfnVectors:
   .word  0
   .word  PendSV_Handler
   .word  SysTick_Handler
-  .word  GPIO_IRQHandler                   	/* GPIO			            	*/
-  .word  FLASH_IRQHandler                  	/* FLASH                   	 	*/
+  .word  GPIO_Handler                   	/* GPIO			            	*/
+  .word  NVM_Handler                  	/* FLASH                   	 	*/
   .word  0
   .word  0
-  .word	 UART_IRQHandler                   	/* UART			            	*/
-  .word  SPI_IRQHandler                   	/* SPI			            	*/
-  .word  BLE_IRQHandler                   	/* BLE controller			*/
-  .word  WDG_IRQHandler                   	/* WatchDog        		(WWDG)	*/
+  .word	 UART_Handler                   	/* UART			            	*/
+  .word  SPI_Handler                   	/* SPI			            	*/
+  .word  Blue_Handler                   	/* BLE controller			*/
+  .word  WDG_Handler                   	/* WatchDog        		(WWDG)	*/
   .word  0
   .word  0
   .word  0
   .word  0
   .word  0
-  .word  ADC_IRQHandler              		/* ADC                          */
-  .word  I2C1_IRQHandler              		/* I2C1                         */
-  .word  I2C2_IRQHandler              		/* I2C2                         */
+  .word  ADC_Handler              		/* ADC                          */
+  .word  I2C1_Handler              		/* I2C1                         */
+  .word  I2C2_Handler              		/* I2C2                         */
   .word  0
-  .word  MFT1A_IRQHandler              		/* MFT1 A                       */
-  .word  MFT1B_IRQHandler              		/* MFT1 B                       */
-  .word  MFT2A_IRQHandler              		/* MFT2 A                       */
-  .word  MFT2B_IRQHandler              		/* MFT2 B                       */
-  .word  RTC_IRQHandler              		/* RTC                          */
-  .word  PKA_IRQHandler              		/* PKA                          */
-  .word  DMA_IRQHandler              		/* DMA                          */
+  .word  MFT1A_Handler              		/* MFT1 A                       */
+  .word  MFT1B_Handler              		/* MFT1 B                       */
+  .word  MFT2A_Handler              		/* MFT2 A                       */
+  .word  MFT2B_Handler              		/* MFT2 B                       */
+  .word  RTC_Handler              		/* RTC                          */
+  .word  PKA_Handler              		/* PKA                          */
+  .word  DMA_Handler              		    /* DMA                          */
   .word  0
   .word  0
   .word  0
@@ -184,53 +184,53 @@ g_pfnVectors:
   .weak      SysTick_Handler
   .thumb_set SysTick_Handler,Default_Handler
 
-  .weak      GPIO_IRQHandler
-  .thumb_set GPIO_IRQHandler,Default_Handler
+  .weak      GPIO_Handler
+  .thumb_set GPIO_Handler,Default_Handler
 
-  .weak      FLASH_IRQHandler
-  .thumb_set FLASH_IRQHandler,Default_Handler
+  .weak      NVM_Handler
+  .thumb_set NVM_Handler,Default_Handler
 
-  .weak      UART_IRQHandler
-  .thumb_set UART_IRQHandler,Default_Handler
+  .weak      UART_Handler
+  .thumb_set UART_Handler,Default_Handler
 
-  .weak      SPI_IRQHandler
-  .thumb_set SPI_IRQHandler,Default_Handler
+  .weak      SPI_Handler
+  .thumb_set SPI_Handler,Default_Handler
 
-  .weak      BLE_IRQHandler
-  .thumb_set BLE_IRQHandler,Default_Handler
+  .weak      Blue_Handler
+  .thumb_set Blue_Handler,Default_Handler
 
-  .weak      WDG_IRQHandler
-  .thumb_set WDG_IRQHandler,Default_Handler
+  .weak      WDG_Handler
+  .thumb_set WDG_Handler,Default_Handler
 
-  .weak      ADC_IRQHandler
-  .thumb_set ADC_IRQHandler,Default_Handler
+  .weak      ADC_Handler
+  .thumb_set ADC_Handler,Default_Handler
 
-  .weak      I2C1_IRQHandler
-  .thumb_set I2C1_IRQHandler,Default_Handler
+  .weak      I2C1_Handler
+  .thumb_set I2C1_Handler,Default_Handler
 
-  .weak      I2C2_IRQHandler
-  .thumb_set I2C2_IRQHandler,Default_Handler
+  .weak      I2C2_Handler
+  .thumb_set I2C2_Handler,Default_Handler
 
-  .weak      MFT1A_IRQHandler
-  .thumb_set MFT1A_IRQHandler,Default_Handler
+  .weak      MFT1A_Handler
+  .thumb_set MFT1A_Handler,Default_Handler
 
-  .weak      MFT1B_IRQHandler
-  .thumb_set MFT1B_IRQHandler,Default_Handler
+  .weak      MFT1B_Handler
+  .thumb_set MFT1B_Handler,Default_Handler
 
-  .weak      MFT2A_IRQHandler
+  .weak      MFT2A_Handler
   .thumb_set MFT2A_IRQHandler,Default_Handler
 
-  .weak      MFT2B_IRQHandler
-  .thumb_set MFT2B_IRQHandler,Default_Handler
+  .weak      MFT2B_Handler
+  .thumb_set MFT2B_Handler,Default_Handler
 
-  .weak      RTC_IRQHandler
-  .thumb_set RTC_IRQHandler,Default_Handler
+  .weak      RTC_Handler
+  .thumb_set RTC_Handler,Default_Handler
 
-  .weak      PKA_IRQHandler
-  .thumb_set PKA_IRQHandler,Default_Handler
+  .weak      PKA_Handler
+  .thumb_set PKA_Handler,Default_Handler
 
-  .weak      DMA_IRQHandler
-  .thumb_set DMA_IRQHandler,Default_Handler
+  .weak      DMA_Handler
+  .thumb_set DMA_Handler,Default_Handler
 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

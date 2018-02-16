@@ -57,7 +57,7 @@ WEAK_FUNCTION(void I2C2_Handler(void) {});
 WEAK_FUNCTION(void I2C1_Handler(void) {});
 WEAK_FUNCTION(void DMA_Handler(void) {});
 WEAK_FUNCTION(void PKA_Handler(void) {});
-
+#endif //ccc
 
 //------------------------------------------------------------------------------
 //   uint32_t ota_sw_activation
@@ -108,6 +108,7 @@ REQUIRED(uint8_t wakeupFromSleepFlag);
 SECTION(".__blueflag_RAM")
 REQUIRED(uint32_t __blueflag_RAM);
 
+
 //------------------------------------------------------------------------------
 //   uint32_t savedICSR
 //
@@ -139,6 +140,8 @@ uint32_t savedSHCSR;
 uint32_t savedNVIC_ISPR;
 
 
+
+#ifdef ccc
 int __low_level_init(void) 
 {
 	// If the reset reason is a wakeup from sleep restore the context
@@ -288,11 +291,12 @@ REQUIRED(const intvec_elem __vector_table[]) = {
 //------------------------------------------------------------------------------
 SECTION(".app_base")
 REQUIRED(uint32_t *app_base) = (uint32_t *) __vector_table;
+#endif //ccc
+
 
 
 SECTION(".bss.__blue_RAM")
 REQUIRED(static uint8_t __blue_RAM[8*64+12]) = {0,};
-#endif //ccc
 
 
 /**
@@ -590,9 +594,9 @@ void SystemInit(void)
 	/* Device Configuration */
 	DeviceConfiguration(TRUE, TRUE);
 	/* Disable all the peripherals clock except NVM, SYSCTR, PKA and RNG */
-	//CKGEN_SOC->CLOCK_EN = 0xE0066;
+	CKGEN_SOC->CLOCK_EN = 0xE0066;
 	/* Disable all the peripherals clock except NVM, SYSCTR*/
-	CKGEN_SOC->CLOCK_EN = 0x00006;
+	//CKGEN_SOC->CLOCK_EN = 0x00006;
 	__enable_irq();
 	//__disable_irq();
 }
