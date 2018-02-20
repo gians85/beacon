@@ -6,7 +6,7 @@
 //#include "mbed_toolchain.h"
 
 /* This file contains all the information needed to init the BlueNRG-1 stack.
- * These constants and variables are used from the BlueNRG-1 stack to reserve RAM and FLASH 
+ * These constants and variables are used from the BlueNRG-1 stack to reserve RAM and FLASH
  * according the application requests
  */
 
@@ -51,21 +51,21 @@
 #define FLASH_SERVER_DB_SIZE    (0x400)
 
    /* Set supported max value for ATT_MTU enabled by the application. Allowed values in range: [23:158] [New parameter added on BLE stack v2.x] */
-#define MAX_ATT_MTU             (DEFAULT_ATT_MTU) 
+#define MAX_ATT_MTU             (DEFAULT_ATT_MTU)
 
 /* Set supported max value for attribute size: it is the biggest attribute size enabled by the application */
-#define MAX_ATT_SIZE            (0)  
+#define MAX_ATT_SIZE            (0)
 
-/* Set the minumum number of prepare write requests needed for a long write procedure for a characteristic with len > 20bytes: 
- * 
+/* Set the minumum number of prepare write requests needed for a long write procedure for a characteristic with len > 20bytes:
+ *
  * It returns 0 for characteristics with len <= 20bytes
- * 
- * NOTE: If prepare write requests are used for a characteristic (reliable write on multiple characteristics), then 
+ *
+ * NOTE: If prepare write requests are used for a characteristic (reliable write on multiple characteristics), then
  * this value should be set to the number of prepare write needed by the application.
- * 
- *  [New parameter added on BLE stack v2.x] 
+ *
+ *  [New parameter added on BLE stack v2.x]
 */
-#define PREPARE_WRITE_LIST_SIZE PREP_WRITE_X_ATT(MAX_ATT_SIZE) 
+#define PREPARE_WRITE_LIST_SIZE PREP_WRITE_X_ATT(MAX_ATT_SIZE)
 
 /* Additional number of memory blocks  to be added to the minimum */
 #define OPT_MBLOCKS		(6) /* 6:  for reaching the max throughput: ~220kbps (same as BLE stack 1.x) */
@@ -152,7 +152,7 @@ const BlueNRG_Stack_Initialization_t BlueNRG_Stack_Init_params = {
     NUM_GATT_SERVICES,
     ATT_VALUE_ARRAY_SIZE,
     NUM_LINKS,
-    0, 
+    0,
     PREPARE_WRITE_LIST_SIZE, /* [New parameter added on BLE stack v2.x] */
     PCKT_COUNT,               /* [New parameter added on BLE stack v2.x] */
     MAX_ATT_MTU,             /* [New parameter added on BLE stack v2.x] */

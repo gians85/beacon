@@ -8,27 +8,13 @@
 
 "--device=BlueNRG-1" 
 
-"--multicore_nr_of_cores=1" 
-
-"--jet_probe=cmsisdap" 
-
-"--jet_script_file=C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\config\debugger\ST\STM32.ProbeScript" 
-
-"--jet_standard_reset=2,300,200" 
-
-"--reset_style=\"0,-,0,Disabled__no_reset_\"" 
-
-"--reset_style=\"1,-,0,Software\"" 
-
-"--reset_style=\"2,-,1,Hardware\"" 
-
-"--reset_style=\"4,-,0,System\"" 
-
-"--reset_style=\"9,ConnectUnderReset,0,Connect_during_reset\"" 
-
 "--drv_interface=SWD" 
 
-"--drv_catch_exceptions=0xff0" 
+"--stlink_reset_strategy=0,0" 
+
+"--drv_catch_exceptions=0x000" 
+
+"--drv_debug_ap=0" 
 
 
 

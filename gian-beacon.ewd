@@ -85,7 +85,7 @@
         </option>
         <option>
           <name>OCDynDriverList</name>
-          <state>CMSISDAP_ID</state>
+          <state>STLINK_ID</state>
         </option>
         <option>
           <name>OCLastSavedByProductVersion</name>
@@ -113,7 +113,7 @@
         </option>
         <option>
           <name>FlashLoadersV3</name>
-          <state></state>
+          <state>$TOOLKIT_DIR$\config\flashloader\ST\BlueNRG-1.board</state>
         </option>
         <option>
           <name>OCImagesSuppressCheck1</name>
@@ -328,7 +328,7 @@
         <option>
           <name>CMSISDAPResetList</name>
           <version>1</version>
-          <state>10</state>
+          <state>9</state>
         </option>
         <option>
           <name>CMSISDAPHWResetDuration</name>
@@ -469,7 +469,7 @@
         </option>
         <option>
           <name>CMSISDAPSelectedCPUBehaviour</name>
-          <state>0</state>
+          <state></state>
         </option>
         <option>
           <name>ICpuName</name>
@@ -749,7 +749,7 @@
         </option>
         <option>
           <name>IjetSelectedCPUBehaviour</name>
-          <state>0</state>
+          <state></state>
         </option>
         <option>
           <name>ICpuName</name>
@@ -893,12 +893,12 @@
         </option>
         <option>
           <name>CCJLinkInterfaceRadio</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCJLinkResetList</name>
           <version>6</version>
-          <state>5</state>
+          <state>7</state>
         </option>
         <option>
           <name>CCJLinkInterfaceCmdLine</name>
@@ -1068,7 +1068,7 @@
         <option>
           <name>CEmuCommPort</name>
           <version>0</version>
-          <state>0</state>
+          <state>4</state>
         </option>
         <option>
           <name>jtago</name>
@@ -1143,7 +1143,7 @@
         <debug>1</debug>
         <option>
           <name>CRDIDriverDll</name>
-          <state>###Uninitialized###</state>
+          <state>Browse to your RDI driver</state>
         </option>
         <option>
           <name>CRDILogFileCheck</name>
@@ -1298,7 +1298,7 @@
         </option>
         <option>
           <name>CCSTLinkDAPNumber</name>
-          <state></state>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -1311,7 +1311,7 @@
         <debug>1</debug>
         <option>
           <name>CThirdPartyDriverDll</name>
-          <state>###Uninitialized###</state>
+          <state>Browse to your third-party driver</state>
         </option>
         <option>
           <name>CThirdPartyLogFileCheck</name>
@@ -1357,7 +1357,7 @@
         </option>
         <option>
           <name>CCMSPFetTargetVoltage</name>
-          <state>###Uninitialized###</state>
+          <state>3.0</state>
         </option>
         <option>
           <name>CCMSPFetVCCDefault</name>
@@ -1415,11 +1415,11 @@
         </option>
         <option>
           <name>TIPackage</name>
-          <state></state>
+          <state>C:\ti\ccs_base</state>
         </option>
         <option>
           <name>BoardFile</name>
-          <state></state>
+          <state>$TOOLKIT_DIR$\config\debugger\TexasInstruments\xds\UNKNOWN_XDS200_CJTAG.dat</state>
         </option>
         <option>
           <name>DoLogfile</name>
@@ -1634,4 +1634,5 @@
     </debuggerPlugins>
   </configuration>
 </project>
+
 
