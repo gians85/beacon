@@ -67,10 +67,10 @@ inline void gpio_dir(gpio_t *obj, PinDirection direction) {
 
 inline void gpio_write(gpio_t *obj, int value){
 	if (value!=0){
-		GPIO_WriteBit(obj->GPIO_Pin, 1);
+		GPIO_WriteBit(obj->GPIO_Pin, Bit_SET);
 	}
     else{
-    	GPIO_WriteBit(obj->GPIO_Pin, 0);
+    	GPIO_WriteBit(obj->GPIO_Pin, Bit_RESET);
     }
 }
 

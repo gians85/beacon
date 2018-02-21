@@ -74,8 +74,8 @@ __vector_table
         DCD     MFT2A_IRQHandler               ; Reserved
         DCD     MFT2B_IRQHandler               ; Reserved
         DCD     RTC_IRQHandler                 ; Reserved
-        DCD     PKA_Handler                 ; Reserved
-        DCD     DMA_Handler                 ; Reserved
+        DCD     PKA_Handler                    ; Reserved
+        DCD     DMA_Handler                    ; Reserved
         DCD     0                              ; Reserved
         DCD     0                              ; Reserved
         DCD     0                              ; Reserved

@@ -2361,6 +2361,12 @@
       <name>$PROJ_DIR$\sdk_hal\inc\asm.h</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\sdk_hal\src\BlueNRG1_sleep.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\sdk_hal\inc\BlueNRG1_sleep.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\sdk_hal\src\context_switch.s</name>
     </file>
     <file>

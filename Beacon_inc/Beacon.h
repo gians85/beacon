@@ -13,6 +13,8 @@ extern "C" {
 #include "ble_const.h"
 #include "bluenrg1_stack.h"
 #include "Beacon_config.h"
+#include "clock.h"
+#include "BlueNRG1_sleep.h"
 #ifdef __cplusplus
 }
 #endif
@@ -67,8 +69,10 @@ void beacon (){
 		/* BlueNRG-1 stack tick */
 		BTLE_StackTick();
 
+        //wait_ms(50);
+
 		/* Enable Power Save according the Advertising Interval */
-		// BlueNRG_Sleep(SLEEPMODE_NOTIMER, 0, 0);
+		BlueNRG_Sleep(SLEEPMODE_NOTIMER, 0, 0);
 
 #if ST_USE_OTA_SERVICE_MANAGER_APPLICATION
 		if (SdkEvalPushButtonGetState(BUTTON_1) == RESET)
@@ -218,7 +222,10 @@ void Blue_Handler(void)
     RAL_Isr();
 }
 
-
+void SysTick_Handler(void)
+{
+    SysCount_Handler();
+}
 
 
 

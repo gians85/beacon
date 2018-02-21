@@ -101,13 +101,13 @@ void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable){
 	/* Enable the UART Interrupt */
 	NVIC_InitStructure.NVIC_IRQChannel = UART_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = LOW_PRIORITY;
-	NVIC_InitStructure.NVIC_IRQChannelCmd = enable;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = (FunctionalState)enable;
 	NVIC_Init(&NVIC_InitStructure);
 	//UART_ITConfig(UART_IT_RX, enable);
 	if (irq == RxIrq)
-		UART_ITConfig(UART_IT_RX, enable);
+		UART_ITConfig(UART_IT_RX, (FunctionalState)enable);
 	else// TxIrq
-		UART_ITConfig(UART_IT_TXFE, enable);
+		UART_ITConfig(UART_IT_TXFE, (FunctionalState)enable);
 }
 
 void UART_Handler(void){

@@ -1,4 +1,7 @@
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\gian-beacon.pbd.linf
+C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\Beacon.pbi
+C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\master_events_CB.pbi
+C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\main.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\aes.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\aesni.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\AnalogIn.pbi
@@ -7,7 +10,6 @@ C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\asn1parse.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\asn1write.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\ATCmdParser.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\base64.pbi
-C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\Beacon.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\bignum.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\blowfish.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\BlueNRG1_adc.pbi
@@ -63,7 +65,6 @@ C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\FileSystem.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\FileSystemHandle.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\FlashIAP.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\gcm.pbi
-C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\gp_timer.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\gpio_api.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\havege.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\HeapBlockDevice.pbi
@@ -73,8 +74,6 @@ C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\I2CSlave.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\InterruptIn.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\InterruptManager.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\LocalFileSystem.pbi
-C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\main.pbi
-C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\master_events_CB.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\mbed_alloc_wrappers.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\mbed_application.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\mbed_assert.pbi
@@ -111,7 +110,6 @@ C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\memory_buffer_alloc.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\misc.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\net_sockets.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\oid.pbi
-C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\osal.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\padlock.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\pem.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\pin_device.pbi
@@ -165,3 +163,6 @@ C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\x509_csr.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\x509write_crt.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\x509write_csr.pbi
 C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\xtea.pbi
+C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\BlueNRG1_sleep.pbi
+C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\gp_timer.pbi
+C:\Users\Gianluca\mbedCLIdev\gian-beacon\BUILD\Obj\osal.pbi

@@ -1,6 +1,6 @@
 /******************** (C) COPYRIGHT 2015 STMicroelectronics ********************
 * File Name          : compiler.h
-* Author             : AMS - VMA RF Application team 
+* Author             : AMS - VMA RF Application team
 * Version            : V1.0.0
 * Date               : 14-September-2015
 * Description        : Compiler-dependent macros.
@@ -34,7 +34,7 @@
   * @brief  This is the section dedicated to IAR toolchain
   */
 #if defined(__ICCARM__) || defined(__IAR_SYSTEMS_ASM__)
-    
+
 /**
   * @brief  PACKED
   *         Use the PACKED macro for variables that needs to be packed.
@@ -86,9 +86,7 @@
   *         Use the WEAK_FUNCTION macro to declare a weak function.
   *         Usage:  WEAK_FUNCTION(int my_weak_function(void))
   */
-#ifdef sdk
 #define WEAK_FUNCTION(function)        __weak function
-#endif
 
 /**
   * @brief  NO_INIT
@@ -100,7 +98,7 @@
 
 /**
   * @brief  NOLOAD
-  *         Use the NOLOAD macro to declare a not initialized variable that 
+  *         Use the NOLOAD macro to declare a not initialized variable that
   *             must be placed in a specific section in Flash.
   *             Before the NOLOAD declaration, the SECTION declaration must be used.
   *
@@ -128,7 +126,7 @@ extern void __iar_program_start(void);
 /**
  * @}
  */
-    
+
 /** @addtogroup Atollic_toolchain_macros    Atollic toolchain macros
   * @{
   */
@@ -175,15 +173,14 @@ extern void __iar_program_start(void);
   *         Use the WEAK_FUNCTION macro to declare a weak function.
   *         Usage:  WEAK_FUNCTION(int my_weak_function(void))
   */
-#ifdef sdk
-#define WEAK_FUNCTION(function)         __attribute__((weak)) function 
-#endif
+#define WEAK_FUNCTION(function)         __attribute__((weak)) function
+
 /**
   * @brief  NORETURN_FUNCTION
   *         Use the NORETURN_FUNCTION macro to declare a no return function.
   *         Usage:  NORETURN_FUNCTION(void my_noretrun_function(void))
   */
-#define NORETURN_FUNCTION(function)     __attribute__((noreturn)) function 
+#define NORETURN_FUNCTION(function)     __attribute__((noreturn)) function
 
 /**
   * @brief  NOSTACK_FUNCTION
@@ -203,7 +200,7 @@ extern void __iar_program_start(void);
 
 /**
   * @brief  NOLOAD
-  *         Use the NOLOAD macro to declare a not initialized variable that 
+  *         Use the NOLOAD macro to declare a not initialized variable that
   *             must be placed in a specific section in Flash.
   *             Before the NOLOAD declaration, the SECTION declaration must be used.
   *             Then, this section must be placed correctly in the linker file.
@@ -233,7 +230,7 @@ extern void __iar_program_start(void);
   * @brief  This is the section dedicated to Keil toolchain
   */
 #else
-#ifdef __CC_ARM	
+#ifdef __CC_ARM
 
 /**
   * @brief  PACKED
@@ -277,7 +274,7 @@ extern void __iar_program_start(void);
   *         Use the NORETURN_FUNCTION macro to declare a no return function.
   *         Usage:  NORETURN_FUNCTION(void my_noretrun_function(void))
   */
-#define NORETURN_FUNCTION(function)     __attribute__((noreturn)) function 
+#define NORETURN_FUNCTION(function)     __attribute__((noreturn)) function
 
 /**
   * @brief  NOSTACK_FUNCTION
@@ -298,7 +295,7 @@ extern void __iar_program_start(void);
 
 /**
   * @brief  NOLOAD
-  *         Use the NOLOAD macro to declare a not initialized variable that 
+  *         Use the NOLOAD macro to declare a not initialized variable that
   *             must be placed in a specific section in Flash.
   *             Before the NOLOAD declaration, the SECTION declaration must be used.
   *             Then, this section must be placed correctly in the linker file.
